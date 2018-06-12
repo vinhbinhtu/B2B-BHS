@@ -1,0 +1,62 @@
+E:\Plugin\B2B_Plugin\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.dll
+E:\Plugin\B2B_Plugin\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.pdb
+E:\Plugin\B2B_Plugin\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Microsoft.Xrm.Sdk.dll
+E:\Plugin\B2B_Plugin\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Microsoft.Xrm.Sdk.xml
+E:\Plugin\B2B_Plugin\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.dll
+E:\Plugin\B2B_Plugin\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.pdb
+E:\Plugin\B2B_Plugin\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.csprojResolveAssemblyReference.cache
+E:\Plugin\B2B_Plugin\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+E:\Plugin\B2B_Plugin\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.dll
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.pdb
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Microsoft.Xrm.Sdk.dll
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Microsoft.Xrm.Sdk.xml
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.csprojResolveAssemblyReference.cache
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.dll
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.pdb
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.dll
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.pdb
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.csprojResolveAssemblyReference.cache
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.dll
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.pdb
+E:\Source\Source Transfer AX\B2B\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.dll
+E:\Source\Source Transfer AX\B2B\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.pdb
+E:\Source\Source Transfer AX\B2B\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.dll
+E:\Source\Source Transfer AX\B2B\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.pdb
+E:\Source\Source Transfer AX\B2B\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.csprojResolveAssemblyReference.cache
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.dll
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.pdb
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.dll
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.pdb
+E:\Sources\B2B\Source\Root\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.dll
+E:\Sources\B2B\Source\Root\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.pdb
+E:\Sources\B2B\Source\Root\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.csproj.CoreCompileInputs.cache
+E:\Sources\B2B\Source\Root\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.dll
+E:\Sources\B2B\Source\Root\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.pdb
+E:\Sources\B2B\Source\Root\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.csprojResolveAssemblyReference.cache
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.dll
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.pdb
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.csprojResolveAssemblyReference.cache
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.dll
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.pdb
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.pdb
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.pdb
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.dll
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.pdb
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.dll
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.pdb
+C:\GITBUB\B2B-BHS\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.dll
+C:\GITBUB\B2B-BHS\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.pdb
+C:\GITBUB\B2B-BHS\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.csproj.CoreCompileInputs.cache
+C:\GITBUB\B2B-BHS\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.dll
+C:\GITBUB\B2B-BHS\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.pdb

@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BHS_BSD_CRMSERVICEAXServiceGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_BHS_BSD_CRMSERVICEAXService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="NetTcpBinding_BHS_BSD_CRMSERVICEAXService" type="i0:BHS_BSD_CRMSERVICEAXService">
+    <wsp:PolicyReference URI="#NetTcpBinding_BHS_BSD_CRMSERVICEAXService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="BHS_AccountClassification_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_AccountClassification_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ResonCode_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ResonCode_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ValidateAddressAccount">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateAddressAccount" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_BankAccount_Delete">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankAccount_Delete" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Area_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Area_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Country_Delete">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Country_Delete" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_DelectAddress">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_DelectAddress" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CreateReturnSalesOrder">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CreateReturnSalesOrder" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CustAccount_Delete">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustAccount_Delete" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ReasonCode_Delete">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ReasonCode_Delete" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_BankGroup_Delete">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankGroup_Delete" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_AccountClassification_Delete">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_AccountClassification_Delete" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CancelSalesOrder">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CancelSalesOrder" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ValidateCustOpenBalanceDueDate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateCustOpenBalanceDueDate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_BankAccount_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankAccount_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CustAccount_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustAccount_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Segment_Delete">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Segment_Delete" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_District_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_District_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_District_Delete">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_District_Delete" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_InsertAddress">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_InsertAddress" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Region_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Region_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Region_Delete">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Region_Delete" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_BankGroup_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankGroup_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CustGroup_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustGroup_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ReasonCodeGroup_Delete">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ReasonCodeGroup_Delete" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Area_Delete">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Area_Delete" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Province_Delete">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Province_Delete" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ValidateCustOpenBalance">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateCustOpenBalance" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ResonCodeGroup_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ResonCodeGroup_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CreateMoveOut">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CreateMoveOut" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Province_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Province_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Country_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Country_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CustGroup_Delete">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustGroup_Delete" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePickingList">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/CreatePickingList" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceCreatePickingListRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceCreatePickingListRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceCreatePickingListResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSalesPrice">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/UpdateSalesPrice" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Segment_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Segment_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="checkSalesTable">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/checkSalesTable" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceCheckSalesTableRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceCheckSalesTableRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceCheckSalesTableResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ValidateOnHand_RequestDelivery">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateOnHand_RequestDelivery" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ValidateCustOpenBalanceOne">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateCustOpenBalanceOne" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddressSalesOrder">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/UpdateAddressSalesOrder" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="TestMethod">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/TestMethod" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceTestMethodRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceTestMethodRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceTestMethodResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_VendAccount_InsertUpdate">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_VendAccount_InsertUpdate" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ValidateOnHand">
+      <soap12:operation soapAction="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateOnHand" style="document" />
+      <wsdl:input name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandRequest">
+        <soap12:header message="i0:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BHS_BSD_CRMSERVICEAXServiceGroup">
+    <wsdl:port name="NetTcpBinding_BHS_BSD_CRMSERVICEAXService" binding="tns:NetTcpBinding_BHS_BSD_CRMSERVICEAXService">
+      <soap12:address location="net.tcp://10.33.21.1:8201/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://10.33.21.1:8201/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>axservice@SUG.TTCG.LAN</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

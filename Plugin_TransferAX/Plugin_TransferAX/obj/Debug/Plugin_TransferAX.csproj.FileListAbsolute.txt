@@ -1,0 +1,85 @@
+c:\users\vinhlh\documents\visual studio 2015\Projects\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
+c:\users\vinhlh\documents\visual studio 2015\Projects\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
+c:\users\vinhlh\documents\visual studio 2015\Projects\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+c:\users\vinhlh\documents\visual studio 2015\Projects\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Xrm.Sdk.dll
+c:\users\vinhlh\documents\visual studio 2015\Projects\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.dll
+c:\users\vinhlh\documents\visual studio 2015\Projects\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.pdb
+c:\users\vinhlh\documents\visual studio 2015\Projects\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll.config
+C:\Users\vinhlh\Documents\Visual Studio 2015\Projects\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csprojResolveAssemblyReference.cache
+D:\AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll.config
+D:\AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
+D:\AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
+D:\AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\AX\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.dll
+D:\AX\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.pdb
+C:\Users\vinhlh\Desktop\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll.config
+C:\Users\vinhlh\Desktop\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
+C:\Users\vinhlh\Desktop\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
+C:\Users\vinhlh\Desktop\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\vinhlh\Desktop\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\vinhlh\Desktop\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.dll
+C:\Users\vinhlh\Desktop\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.pdb
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll.config
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.dll
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.pdb
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csprojResolveAssemblyReference.cache
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll.config
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.dll
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.pdb
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csprojResolveAssemblyReference.cache
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll.config
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.dll
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.pdb
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll.config
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.pdb
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll.config
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.dll
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.pdb
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll.config
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.pdb
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll.config
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.dll
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.pdb
+E:\source server b2c\B2B\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll.config
+E:\source server b2c\B2B\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
+E:\source server b2c\B2B\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
+E:\source server b2c\B2B\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+E:\source server b2c\B2B\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Microsoft.Xrm.Sdk.dll
+E:\source server b2c\B2B\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csprojResolveAssemblyReference.cache
+E:\source server b2c\B2B\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.dll
+E:\source server b2c\B2B\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.pdb
+C:\GITBUB\B2B-BHS\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csproj.CoreCompileInputs.cache
+C:\GITBUB\B2B-BHS\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.dll
+C:\GITBUB\B2B-BHS\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.pdb
+C:\GITBUB\B2B-BHS\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll.config
+C:\GITBUB\B2B-BHS\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
+C:\GITBUB\B2B-BHS\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
+C:\GITBUB\B2B-BHS\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csproj.CopyComplete
+C:\GITBUB\B2B-BHS\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csprojResolveAssemblyReference.cache

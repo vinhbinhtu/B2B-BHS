@@ -1,0 +1,43 @@
+D:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll
+D:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.pdb
+D:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.dll
+D:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.pdb
+D:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll.config
+D:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.csprojResolveAssemblyReference.cache
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll.config
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.pdb
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Microsoft.Xrm.Sdk.dll
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.dll
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.pdb
+E:\Source\Source Transfer AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.csprojResolveAssemblyReference.cache
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll.config
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.pdb
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.dll
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.pdb
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll.config
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.pdb
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.dll
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.pdb
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll.config
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.pdb
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.pdb
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll.config
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.pdb
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.pdb

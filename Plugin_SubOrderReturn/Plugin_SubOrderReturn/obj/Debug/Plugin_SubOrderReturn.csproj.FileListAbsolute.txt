@@ -1,0 +1,75 @@
+E:\Plugin\B2B_Plugin\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.dll
+E:\Plugin\B2B_Plugin\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.pdb
+E:\Plugin\B2B_Plugin\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+E:\Plugin\B2B_Plugin\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.dll
+E:\Plugin\B2B_Plugin\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+E:\Plugin\B2B_Plugin\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.xml
+E:\Plugin\B2B_Plugin\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.csprojResolveAssemblyReference.cache
+E:\Plugin\B2B_Plugin\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.dll
+E:\Plugin\B2B_Plugin\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.pdb
+E:\SourceBHS\source_js_plugin\JS_PLG\B2B_Plugin_Return\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.dll
+E:\SourceBHS\source_js_plugin\JS_PLG\B2B_Plugin_Return\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.pdb
+E:\SourceBHS\source_js_plugin\JS_PLG\B2B_Plugin_Return\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+E:\SourceBHS\source_js_plugin\JS_PLG\B2B_Plugin_Return\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.dll
+E:\SourceBHS\source_js_plugin\JS_PLG\B2B_Plugin_Return\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+E:\SourceBHS\source_js_plugin\JS_PLG\B2B_Plugin_Return\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.xml
+E:\SourceBHS\source_js_plugin\JS_PLG\B2B_Plugin_Return\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.csprojResolveAssemblyReference.cache
+E:\SourceBHS\source_js_plugin\JS_PLG\B2B_Plugin_Return\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.dll
+E:\SourceBHS\source_js_plugin\JS_PLG\B2B_Plugin_Return\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.pdb
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.dll
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.pdb
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.dll
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.xml
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.csprojResolveAssemblyReference.cache
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.dll
+E:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.pdb
+D:\sourceserver-b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.dll
+D:\sourceserver-b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.pdb
+D:\sourceserver-b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\sourceserver-b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\sourceserver-b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.csprojResolveAssemblyReference.cache
+D:\sourceserver-b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.dll
+D:\sourceserver-b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.pdb
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.dll
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.pdb
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.csprojResolveAssemblyReference.cache
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.dll
+D:\B2B-SERVER\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.pdb
+D:\Plugin\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.dll
+D:\Plugin\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.pdb
+D:\Plugin\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\Plugin\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\Plugin\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+D:\Plugin\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.csprojResolveAssemblyReference.cache
+D:\Plugin\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.dll
+D:\Plugin\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.pdb
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.pdb
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.pdb
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.dll
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.pdb
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.dll
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.pdb
+C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.dll
+C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.pdb
+C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.csproj.CoreCompileInputs.cache
+C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.csproj.CopyComplete
+C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.dll
+C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.pdb

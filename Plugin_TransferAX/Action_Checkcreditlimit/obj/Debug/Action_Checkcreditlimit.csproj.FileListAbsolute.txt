@@ -1,0 +1,37 @@
+E:\Source\Source Transfer AX\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.dll.config
+E:\Source\Source Transfer AX\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.dll
+E:\Source\Source Transfer AX\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.pdb
+E:\Source\Source Transfer AX\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+E:\Source\Source Transfer AX\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Microsoft.Xrm.Sdk.dll
+E:\Source\Source Transfer AX\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.dll
+E:\Source\Source Transfer AX\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.pdb
+E:\Source\Source Transfer AX\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.csprojResolveAssemblyReference.cache
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.dll.config
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.dll
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.pdb
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.dll
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.pdb
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.csprojResolveAssemblyReference.cache
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.dll.config
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.dll
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.pdb
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.csprojResolveAssemblyReference.cache
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.dll
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.pdb
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.dll.config
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.pdb
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.pdb
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.dll.config
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.dll
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Action_Checkcreditlimit.pdb
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.dll
+D:\B2B - Source\B2B-V5\b2b\solution_bsd\PLUGIN\B2B-CRM\Plugin_TransferAX\Action_Checkcreditlimit\obj\Debug\Action_Checkcreditlimit.pdb

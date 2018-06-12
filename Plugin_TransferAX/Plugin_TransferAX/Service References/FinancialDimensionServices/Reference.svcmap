@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4b98debf-667a-400b-8281-b6bc810148ae" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.33.21.1:8101/DynamicsAx/Services/FinancialDimensionServices" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FinancialDimensionServices2.wsdl" MetadataType="Wsdl" ID="d8ebcb26-63ff-4bc6-b6af-886e639b99ba" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/FinancialDimensionServices?wsdl=wsdl0" />
+    <MetadataFile FileName="FinancialDimensionServices5.xsd" MetadataType="Schema" ID="9965ca9d-caf7-42e2-a433-f39f9244921e" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/FinancialDimensionServices?xsd=xsd0" />
+    <MetadataFile FileName="FinancialDimensionServices.xsd" MetadataType="Schema" ID="2973aef1-cff6-4e96-8e55-940afc7bf725" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/FinancialDimensionServices?xsd=xsd4" />
+    <MetadataFile FileName="FinancialDimensionServices2.xsd" MetadataType="Schema" ID="b7cdb726-bb4b-4875-940e-dec8702e187d" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/FinancialDimensionServices?xsd=xsd8" />
+    <MetadataFile FileName="FinancialDimensionServices.wsdl" MetadataType="Wsdl" ID="0e9baca0-75fc-4c58-a842-e93a011aabb9" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/FinancialDimensionServices" />
+    <MetadataFile FileName="FinancialDimensionServices1.xsd" MetadataType="Schema" ID="1a08851e-4f62-4eec-ba3f-d4ffc67e6247" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/FinancialDimensionServices?xsd=xsd1" />
+    <MetadataFile FileName="FinancialDimensionServices4.xsd" MetadataType="Schema" ID="7ed00783-a2f2-4e24-aee9-a1277d777f6f" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/FinancialDimensionServices?xsd=xsd5" />
+    <MetadataFile FileName="FinancialDimensionServices1.wsdl" MetadataType="Wsdl" ID="212e8403-810d-4337-b6f6-f650e8a74e7a" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/FinancialDimensionServices?wsdl=wsdl1" />
+    <MetadataFile FileName="FinancialDimensionServices7.xsd" MetadataType="Schema" ID="999f7a79-67bc-436a-b95e-194989d3052a" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/FinancialDimensionServices?xsd=xsd2" />
+    <MetadataFile FileName="FinancialDimensionServices6.xsd" MetadataType="Schema" ID="3b74cd0b-8285-4ec9-851e-ea04c94e3d1d" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/FinancialDimensionServices?xsd=xsd6" />
+    <MetadataFile FileName="FinancialDimensionServices3.xsd" MetadataType="Schema" ID="094de65d-eb5c-4b14-b31c-532bd10b2176" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/FinancialDimensionServices?xsd=xsd3" />
+    <MetadataFile FileName="FinancialDimensionServices8.xsd" MetadataType="Schema" ID="3c7a3b44-ce9d-4990-aa93-3f839018c8a7" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/FinancialDimensionServices?xsd=xsd7" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

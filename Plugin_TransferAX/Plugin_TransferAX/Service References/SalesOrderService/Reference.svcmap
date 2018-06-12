@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e7c3dbae-33fc-4153-adee-3f65282c4b99" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SalesSalesOrderService_Group14.xsd" MetadataType="Schema" ID="601671c6-0b10-43ee-9c46-717f73cbb788" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd1" />
+    <MetadataFile FileName="SalesSalesOrderService_Group141.xsd" MetadataType="Schema" ID="90565552-05b6-492f-9d0b-33df8367ef3c" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd4" />
+    <MetadataFile FileName="SalesSalesOrderService_Group142.xsd" MetadataType="Schema" ID="c05a85f9-5bc5-4de8-9848-d0ca65eb1f6d" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd5" />
+    <MetadataFile FileName="SalesSalesOrderService_Group143.xsd" MetadataType="Schema" ID="cdc5fb83-3b0b-494a-a630-fb8532ac01da" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd15" />
+    <MetadataFile FileName="SalesSalesOrderService_Group144.xsd" MetadataType="Schema" ID="eae4cbd9-c3fa-45bb-8984-1d30313c649e" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd10" />
+    <MetadataFile FileName="SalesSalesOrderService_Group2.wsdl" MetadataType="Wsdl" ID="2e593633-0d6f-43c1-8aad-9306dbcc51d3" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group" />
+    <MetadataFile FileName="SalesSalesOrderService_Group145.xsd" MetadataType="Schema" ID="de0e555a-a150-489d-91ac-6f29bfbc976b" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd14" />
+    <MetadataFile FileName="SalesSalesOrderService_Group146.xsd" MetadataType="Schema" ID="689828c1-5897-4de6-8500-1433ef6970a7" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd13" />
+    <MetadataFile FileName="SalesSalesOrderService_Group21.wsdl" MetadataType="Wsdl" ID="0ec89fdb-5e7f-4489-a49c-b91abc333b18" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?wsdl=wsdl0" />
+    <MetadataFile FileName="SalesSalesOrderService_Group147.xsd" MetadataType="Schema" ID="b88f9d1a-97c2-4df8-ab18-794744342c1e" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd8" />
+    <MetadataFile FileName="SalesSalesOrderService_Group148.xsd" MetadataType="Schema" ID="e5923390-ea40-4132-8355-db4d213587f4" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd9" />
+    <MetadataFile FileName="SalesSalesOrderService_Group149.xsd" MetadataType="Schema" ID="e66fbf1c-9dd5-45a1-9e58-0680a5f352f1" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd11" />
+    <MetadataFile FileName="SalesSalesOrderService_Group1410.xsd" MetadataType="Schema" ID="959b9749-f6d3-4525-8bab-8accb19cd225" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd12" />
+    <MetadataFile FileName="SalesSalesOrderService_Group1411.xsd" MetadataType="Schema" ID="b7241646-203f-40f7-bc2d-d9f6b5ca51d0" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd2" />
+    <MetadataFile FileName="SalesSalesOrderService_Group1412.xsd" MetadataType="Schema" ID="ee632f72-7ce6-410f-8274-fd19afebf38c" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd3" />
+    <MetadataFile FileName="SalesSalesOrderService_Group1413.xsd" MetadataType="Schema" ID="3cc69592-6be9-414a-a1fb-c3c608d3f504" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/SalesSalesOrderService_Group?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

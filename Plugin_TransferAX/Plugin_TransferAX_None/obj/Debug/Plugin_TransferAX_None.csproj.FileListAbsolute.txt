@@ -1,0 +1,10 @@
+C:\Users\vinhlh\Desktop\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX_None\bin\Debug\Plugin_TransferAX_None.dll
+C:\Users\vinhlh\Desktop\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX_None\bin\Debug\Plugin_TransferAX_None.pdb
+C:\Users\vinhlh\Desktop\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX_None\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\vinhlh\Desktop\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX_None\obj\Debug\Plugin_TransferAX_None.csprojResolveAssemblyReference.cache
+C:\Users\vinhlh\Desktop\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX_None\obj\Debug\Plugin_TransferAX_None.dll
+C:\Users\vinhlh\Desktop\Source Transfer AX\Plugin_TransferAX\Plugin_TransferAX_None\obj\Debug\Plugin_TransferAX_None.pdb
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_TransferAX_None\bin\Debug\Plugin_TransferAX_None.dll
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_TransferAX_None\bin\Debug\Plugin_TransferAX_None.pdb
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_TransferAX_None\obj\Debug\Plugin_TransferAX_None.dll
+E:\Source\Source Transfer AX\Org BHS-AX\Plugin_TransferAX\Plugin_TransferAX_None\obj\Debug\Plugin_TransferAX_None.pdb
