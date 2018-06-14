@@ -1,0 +1,7 @@
+C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Test\bin\Debug\Test.exe.config
+C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Test\bin\Debug\Test.exe
+C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Test\bin\Debug\Test.pdb
+C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Test\obj\Debug\Test.exe
+C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Test\obj\Debug\Test.pdb

@@ -7,7 +7,7 @@ using Plugin.Service;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
 using Microsoft.Crm.Sdk.Messages;
-
+using System.Globalization;
 
 namespace Plugin_SubOrderReturn
 {
@@ -44,7 +44,7 @@ namespace Plugin_SubOrderReturn
                                           </entity>
                                         </fetch>", target.Id);
                 EntityCollection list_orderproduct = myService.service.RetrieveMultiple(new FetchExpression(xml));
-
+                if (!list_orderproduct.Entities.Any()) throw new Exception("Please choose product!");
                 #region Tao Suborder 
                 myService.SetState(target.Id, target.LogicalName, 0, 1);
 
@@ -165,7 +165,7 @@ namespace Plugin_SubOrderReturn
 
                 // warehousse
 
-                //if (returnorder.HasValue("bsd_warehouse")) SubOrder["bsd_warehousefrom"] = returnorder["bsd_warehouse"];
+                if (returnorder.HasValue("bsd_warehouse")) SubOrder["bsd_warehouse"] = returnorder["bsd_warehouse"];
                 //if (returnorder.HasValue("bsd_warehouseaddress")) SubOrder["bsd_warehouseaddress"] = returnorder["bsd_warehouseaddress"];
                 if (returnorder.HasValue("bsd_site")) SubOrder["bsd_site"] = returnorder["bsd_site"];
                 if (returnorder.HasValue("bsd_siteaddress")) SubOrder["bsd_siteaddress"] = returnorder["bsd_siteaddress"];
@@ -182,7 +182,7 @@ namespace Plugin_SubOrderReturn
                 if (returnorder.HasValue("bsd_priceofporter")) SubOrder["bsd_priceofporter"] = returnorder["bsd_priceofporter"];
                 if (returnorder.HasValue("bsd_pricepotter")) SubOrder["bsd_pricepotter"] = returnorder["bsd_pricepotter"];
                 if (returnorder.HasValue("bsd_porter")) SubOrder["bsd_porter"] = returnorder["bsd_porter"];
-
+                // ((Money)returnorder["bsd_totalamount"]).Value.ToString("N", new CultureInfo("is-IS"));
                 #endregion
 
                 // throw new Exception("5");
@@ -222,6 +222,7 @@ namespace Plugin_SubOrderReturn
                 #endregion
 
                 #region "Tao Suborder product"
+
                 foreach (var orderproduct in list_orderproduct.Entities)
                 {
                     Entity product = myService.service.Retrieve("product", ((EntityReference)orderproduct["bsd_product"]).Id, new ColumnSet(true));
@@ -588,6 +589,23 @@ namespace Plugin_SubOrderReturn
                                   </entity>
                                 </fetch>");
             EntityCollection list = myService.service.RetrieveMultiple(new FetchExpression(xml_suborder));
+            if(!list.Entities.Any())
+            {
+                xml_suborder = string.Format(@"<fetch version='1.0' top='1' output-format='xml-platform' mapping='logical' distinct='false'>
+                                  <entity name='bsd_suborder'>
+                                    <attribute name='bsd_name' />
+                                    <attribute name='createdon' />
+                                    <attribute name='bsd_type' />
+                                    <attribute name='bsd_suborderid' />
+                                    <attribute name='bsd_pricelist' />
+                                    <order attribute='createdon' descending='true' />
+                                    <filter type='and'>
+                                          <condition attribute='bsd_pricelist' operator='not-null' />
+                                    </filter>
+                                  </entity>
+                                </fetch>");
+                 list = myService.service.RetrieveMultiple(new FetchExpression(xml_suborder));
+            }
             return list;
         }
         public void UpdateSubOrder(Entity suborder)
@@ -615,7 +633,7 @@ namespace Plugin_SubOrderReturn
             new_suborder["bsd_detailamount"] = new Money(detail_amount);
             new_suborder["bsd_totaltax"] = new Money(total_tax);
             new_suborder["bsd_totalamount"] = new Money(total_amount);
-            new_suborder["bsd_totalcurrencyexchange"] = new Money(total_currency_exchange); //vinhlh Money 09-01-2018
+            new_suborder["bsd_totalcurrencyexchange"] = new Money(0); //vinhlh Money 09-01-2018
 
             myService.Update(new_suborder);
 

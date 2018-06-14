@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" />
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Txt" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReasonCodeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ReasonCodeGroupId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNum" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GUI" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BankAccount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryRegionId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StateId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CountyId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryRegionId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GUI" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AccountNum" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_custAcct" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_returnReasonCodeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_emplId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_rmaNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_deadline" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_salesId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GUI_Invoice" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="InvoiceName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_salesLine" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EstimateValue" type="xs:decimal" />
+        <xs:element minOccurs="0" name="ExchangeRate" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNum" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReasonCodeId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ReasonCodeGroupId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BankGroupID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SalesId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InvoiceAccount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DueDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BankAccount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustAccount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BankName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BankGroupID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SwiftCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNum" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustGroupID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RegistrationNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TaxGroup" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CompanyChainId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Chain_Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PaymentTerm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PaymentMethod" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreditLimit" type="xs:decimal" />
+        <xs:element minOccurs="0" name="Shipper" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SegmentId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GUI" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AccountNum" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Street" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Ward" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="District" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Isprimary" type="xs:boolean" />
+        <xs:element minOccurs="0" name="roles" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RegistrationNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryRegionId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StateId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_Timezone" type="q1:Timezone" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryRegionId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StateId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BankGroupID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BankGroupName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RegistrationNum" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustGroupID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReasonCodeGroupId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryRegionId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StateId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CountyId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryRegionId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StateId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CountyId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="list_Item" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReasonCodeGroupId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequesDeliveryNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequesDeliveryDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="lstLine" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryRegionId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StateId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CountyId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryRegionId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AddrFormat" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LongName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_languageId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustGroupID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceCreatePickingListRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_SalesId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lstLine" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SumQuantity" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceCreatePickingListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_itemId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_salesId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="r_salesPrice" type="xs:decimal" />
+        <xs:element minOccurs="0" name="r_lineAmount" type="xs:decimal" />
+        <xs:element minOccurs="0" name="r_discount" type="xs:decimal" />
+        <xs:element minOccurs="0" name="r_discountPercent" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SegmentId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceCheckSalesTableRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s_salesId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_invoiceAccount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_CustAccount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_shipAccount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_payment" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_paymMode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_currencyCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_itemId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_inventSiteId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_wareHouseId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Customerrequisition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_salesTaxgroup" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_TaxItem" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_reasoncode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceCheckSalesTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="list_Item" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accountNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GUI" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GUI_Invoice" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="InvoiceName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="s_salesId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dt_deadLine" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="isReturnOrder" type="xs:boolean" />
+        <xs:element minOccurs="0" name="StatusCRM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BH_SalesAgreement" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ExchRate" type="xs:decimal" />
+        <xs:element minOccurs="0" name="BHS_DeclarationInfomation" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="deposit" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Total" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceTestMethodRequest">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceTestMethodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNum" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VendGroupID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TaxGroup" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CompanyChainId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Chain_Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PaymentTerm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PaymentMethod" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="list_Item" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

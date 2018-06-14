@@ -1,0 +1,112 @@
+F:\Bsd_Plugin\B2B\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+F:\Bsd_Plugin\B2B\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+F:\Bsd_Plugin\B2B\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+F:\Bsd_Plugin\B2B\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+F:\Bsd_Plugin\B2B\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+F:\Bsd_Plugin\B2B\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+F:\b2b-souce\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+F:\b2b-souce\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+F:\b2b-souce\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+F:\b2b-souce\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+F:\b2b-souce\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+F:\HuyCRM\Sourceplugin\Plugin\B2B\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+F:\HuyCRM\Sourceplugin\Plugin\B2B\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+F:\HuyCRM\Sourceplugin\Plugin\B2B\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+F:\HuyCRM\Sourceplugin\Plugin\B2B\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+F:\HuyCRM\Sourceplugin\Plugin\B2B\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+F:\HuyCRM\Sourceplugin\Plugin\B2B\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+F:\source b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+F:\source b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+F:\source b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+F:\source b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+F:\source b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+F:\source b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+F:\b2b-souce\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+F:\back-upsource- b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+F:\back-upsource- b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+F:\back-upsource- b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+F:\back-upsource- b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+F:\back-upsource- b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\Microsoft.Xrm.Sdk.dll
+F:\back-upsource- b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+F:\back-upsource- b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\Microsoft.Xrm.Sdk.xml
+F:\back-upsource- b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+F:\back-upsource- b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+F:\HuyCRM\Sourceplugin\Server B2B Plugin\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+F:\HuyCRM\Sourceplugin\Server B2B Plugin\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+F:\HuyCRM\Sourceplugin\Server B2B Plugin\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+F:\HuyCRM\Sourceplugin\Server B2B Plugin\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+F:\HuyCRM\Sourceplugin\Server B2B Plugin\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+F:\HuyCRM\Sourceplugin\Server B2B Plugin\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+F:\HuyCRM\Sourceplugin\Server B2B Plugin\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+F:\HuyCRM\Sourceplugin\Server B2B Plugin\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\vinhlh\Desktop\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+C:\Users\vinhlh\Desktop\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+C:\Users\vinhlh\Desktop\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+C:\Users\vinhlh\Desktop\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+C:\Users\vinhlh\Desktop\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+C:\Users\vinhlh\Desktop\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+E:\Source\Source Transfer AX\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+E:\Source\Source Transfer AX\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+E:\Source\Source Transfer AX\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+E:\Source\Source Transfer AX\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+E:\Source\Source Transfer AX\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+E:\Source\Source Transfer AX\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+E:\Source\Source Transfer AX\Org BHS-AX\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+E:\Source\Source Transfer AX\Org BHS-AX\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+E:\Source\Source Transfer AX\Org BHS-AX\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+E:\Source\Source Transfer AX\Org BHS-AX\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+E:\Source\Source Transfer AX\Org BHS-AX\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+D:\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+D:\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+D:\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+D:\DeliveryPlugin\DeliveryPlugin\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\DeliveryPlugin\DeliveryPlugin\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+D:\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+D:\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+C:\Users\vinhlh\Desktop\B2B\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+C:\Users\vinhlh\Desktop\B2B\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+C:\Users\vinhlh\Desktop\B2B\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+C:\Users\vinhlh\Desktop\B2B\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+C:\Users\vinhlh\Desktop\B2B\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+D:\B2B - Source\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+D:\B2B - Source\B2B-V3\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+E:\BitBucket\B2B-v3\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+E:\BitBucket\B2B-v3\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+E:\BitBucket\B2B-v3\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+E:\BitBucket\B2B-v3\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+E:\BitBucket\B2B-v3\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+E:\BitBucket\B2B-v3\b2b\solution_bsd\PLUGIN\B2B-CRM\DeliveryPlugin\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+C:\GITBUB\B2B-BHS\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+C:\GITBUB\B2B-BHS\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+C:\GITBUB\B2B-BHS\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+C:\GITBUB\B2B-BHS\DeliveryPlugin\obj\Debug\DeliveryPlugin.csprojResolveAssemblyReference.cache
+C:\GITBUB\B2B-BHS\DeliveryPlugin\obj\Debug\DeliveryPlugin.csproj.CoreCompileInputs.cache
+C:\GITBUB\B2B-BHS\DeliveryPlugin\obj\Debug\DeliveryPlugin.csproj.CopyComplete
+C:\GITBUB\B2B-BHS\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+C:\GITBUB\B2B-BHS\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb

@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd0" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd2" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+      <xsd:import schemaLocation="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_AccountClassification_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_ResonCode_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_ValidateAddressAccount_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_BankAccount_Delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_Area_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteRequest_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q11:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_Country_Delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q12:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_DelectAddress_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q14:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderRequest_Headers">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q15:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_CreateReturnSalesOrder_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q16:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteRequest_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q17:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_CustAccount_Delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q18:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteRequest_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_ReasonCode_Delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q20:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteRequest_Headers">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q21:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_BankGroup_Delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q22:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteRequest_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q23:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_AccountClassification_Delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q24:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderRequest_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_CancelSalesOrder_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q26:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateRequest_Headers">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q27:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_ValidateCustOpenBalanceDueDate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q28:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q29:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_BankAccount_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q30:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_CustAccount_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q32:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteRequest_Headers">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q33:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_Segment_Delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q34="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q34:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q35="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q35:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_District_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q36:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteRequest_Headers">
+    <wsdl:part xmlns:q37="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q37:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_District_Delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q38="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q38:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressRequest_Headers">
+    <wsdl:part xmlns:q39="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q39:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_InsertAddress_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q40="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q40:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q41="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q41:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_Region_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q42="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q42:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteRequest_Headers">
+    <wsdl:part xmlns:q43="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q43:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_Region_Delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q44="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q44:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q45="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q45:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_BankGroup_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q46="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q46:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q47="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q47:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_CustGroup_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q48="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q48:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteRequest_Headers">
+    <wsdl:part xmlns:q49="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q49:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_ReasonCodeGroup_Delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q50="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q50:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteRequest_Headers">
+    <wsdl:part xmlns:q51="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q51:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_Area_Delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q52="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q52:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteRequest_Headers">
+    <wsdl:part xmlns:q53="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q53:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_Province_Delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q54="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q54:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceRequest_Headers">
+    <wsdl:part xmlns:q55="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q55:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_ValidateCustOpenBalance_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q56="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q56:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q57="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q57:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_ResonCodeGroup_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q58="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q58:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutRequest_Headers">
+    <wsdl:part xmlns:q59="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q59:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_CreateMoveOut_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q60="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q60:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q61="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q61:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_Province_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q62="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q62:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q63="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q63:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_Country_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q64="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q64:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteRequest_Headers">
+    <wsdl:part xmlns:q65="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q65:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_CustGroup_Delete_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q66="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q66:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceCreatePickingListRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceCreatePickingListRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceCreatePickingListRequest_Headers">
+    <wsdl:part xmlns:q67="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q67:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceCreatePickingListResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceCreatePickingListResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_CreatePickingList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q68="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q68:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceRequest_Headers">
+    <wsdl:part xmlns:q69="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q69:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_UpdateSalesPrice_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q70="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q70:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q71="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q71:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_Segment_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q72="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q72:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceCheckSalesTableRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceCheckSalesTableRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceCheckSalesTableRequest_Headers">
+    <wsdl:part xmlns:q73="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q73:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceCheckSalesTableResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceCheckSalesTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_checkSalesTable_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q74="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q74:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryRequest_Headers">
+    <wsdl:part xmlns:q75="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q75:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_ValidateOnHand_RequestDelivery_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q76="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q76:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneRequest_Headers">
+    <wsdl:part xmlns:q77="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q77:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_ValidateCustOpenBalanceOne_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q78="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q78:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderRequest_Headers">
+    <wsdl:part xmlns:q79="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q79:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_UpdateAddressSalesOrder_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q80="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q80:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceTestMethodRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceTestMethodRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceTestMethodRequest_Headers">
+    <wsdl:part xmlns:q81="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q81:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceTestMethodResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceTestMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_TestMethod_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q82="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q82:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateRequest_Headers">
+    <wsdl:part xmlns:q83="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q83:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_VendAccount_InsertUpdate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q84="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q84:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandRequest">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandRequest" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandRequest_Headers">
+    <wsdl:part xmlns:q85="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q85:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandResponse">
+    <wsdl:part name="parameters" element="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandResponse" />
+  </wsdl:message>
+  <wsdl:message name="BHS_BSD_CRMSERVICEAXService_BHS_ValidateOnHand_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q86="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q86:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="BHS_BSD_CRMSERVICEAXService">
+    <wsdl:operation name="BHS_AccountClassification_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_AccountClassification_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_AccountClassification_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_AccountClassification_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_AccountClassification_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ResonCode_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ResonCode_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ResonCode_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ResonCode_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_ResonCode_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ValidateAddressAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateAddressAccount" name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateAddressAccountResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateAddressAccountAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_ValidateAddressAccount_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_BankAccount_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankAccount_Delete" name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankAccount_DeleteResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankAccount_DeleteAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_BankAccount_Delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Area_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Area_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Area_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Area_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_Area_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Country_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Country_Delete" name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Country_DeleteResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Country_DeleteAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_Country_Delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_DelectAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_DelectAddress" name="BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_DelectAddressResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_DelectAddressAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_DelectAddress_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CreateReturnSalesOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CreateReturnSalesOrder" name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CreateReturnSalesOrderResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CreateReturnSalesOrderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CreateReturnSalesOrderAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_CreateReturnSalesOrder_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CustAccount_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustAccount_Delete" name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustAccount_DeleteResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustAccount_DeleteAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_CustAccount_Delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ReasonCode_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ReasonCode_Delete" name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ReasonCode_DeleteResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ReasonCode_DeleteAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_ReasonCode_Delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_BankGroup_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankGroup_Delete" name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankGroup_DeleteResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankGroup_DeleteAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_BankGroup_Delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_AccountClassification_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_AccountClassification_Delete" name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_AccountClassification_DeleteResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_AccountClassification_DeleteAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_AccountClassification_Delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CancelSalesOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CancelSalesOrder" name="BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CancelSalesOrderResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CancelSalesOrderAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_CancelSalesOrder_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ValidateCustOpenBalanceDueDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateCustOpenBalanceDueDate" name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateCustOpenBalanceDueDateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateCustOpenBalanceDueDateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_ValidateCustOpenBalanceDueDate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_BankAccount_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankAccount_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankAccount_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankAccount_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_BankAccount_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CustAccount_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustAccount_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustAccount_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustAccount_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_CustAccount_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Segment_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Segment_Delete" name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Segment_DeleteResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Segment_DeleteAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_Segment_Delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_District_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_District_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_District_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_District_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_District_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_District_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_District_Delete" name="BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_District_DeleteResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_District_DeleteAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_District_Delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_InsertAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_InsertAddress" name="BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_InsertAddressResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_InsertAddressAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_InsertAddress_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Region_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Region_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Region_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Region_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_Region_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Region_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Region_Delete" name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Region_DeleteResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Region_DeleteAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_Region_Delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_BankGroup_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankGroup_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankGroup_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_BankGroup_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_BankGroup_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CustGroup_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustGroup_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustGroup_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustGroup_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_CustGroup_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ReasonCodeGroup_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ReasonCodeGroup_Delete" name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ReasonCodeGroup_DeleteResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ReasonCodeGroup_DeleteAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_ReasonCodeGroup_Delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Area_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Area_Delete" name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Area_DeleteResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Area_DeleteAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_Area_Delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Province_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Province_Delete" name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Province_DeleteResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Province_DeleteAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_Province_Delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ValidateCustOpenBalance">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateCustOpenBalance" name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateCustOpenBalanceResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateCustOpenBalanceAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_ValidateCustOpenBalance_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ResonCodeGroup_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ResonCodeGroup_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ResonCodeGroup_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ResonCodeGroup_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_ResonCodeGroup_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CreateMoveOut">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CreateMoveOut" name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CreateMoveOutResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CreateMoveOutAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_CreateMoveOut_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Province_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Province_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Province_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Province_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_Province_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Country_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Country_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Country_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Country_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_Country_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_CustGroup_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustGroup_Delete" name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustGroup_DeleteResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_CustGroup_DeleteAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_CustGroup_Delete_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePickingList">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/CreatePickingList" name="BHS_BSD_CRMSERVICEAXServiceCreatePickingListRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceCreatePickingListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/CreatePickingListResponse" name="BHS_BSD_CRMSERVICEAXServiceCreatePickingListResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceCreatePickingListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/CreatePickingListAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_CreatePickingList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSalesPrice">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/UpdateSalesPrice" name="BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/UpdateSalesPriceResponse" name="BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/UpdateSalesPriceAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_UpdateSalesPrice_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_Segment_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Segment_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Segment_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_Segment_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_Segment_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkSalesTable">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/checkSalesTable" name="BHS_BSD_CRMSERVICEAXServiceCheckSalesTableRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceCheckSalesTableRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/checkSalesTableResponse" name="BHS_BSD_CRMSERVICEAXServiceCheckSalesTableResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceCheckSalesTableResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/checkSalesTableAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_checkSalesTable_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ValidateOnHand_RequestDelivery">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateOnHand_RequestDelivery" name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateOnHand_RequestDeliveryResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateOnHand_RequestDeliveryAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_ValidateOnHand_RequestDelivery_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ValidateCustOpenBalanceOne">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateCustOpenBalanceOne" name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateCustOpenBalanceOneResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateCustOpenBalanceOneAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_ValidateCustOpenBalanceOne_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddressSalesOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/UpdateAddressSalesOrder" name="BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/UpdateAddressSalesOrderResponse" name="BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/UpdateAddressSalesOrderAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_UpdateAddressSalesOrder_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TestMethod">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/TestMethod" name="BHS_BSD_CRMSERVICEAXServiceTestMethodRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceTestMethodRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/TestMethodResponse" name="BHS_BSD_CRMSERVICEAXServiceTestMethodResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceTestMethodResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/TestMethodAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_TestMethod_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_VendAccount_InsertUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_VendAccount_InsertUpdate" name="BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_VendAccount_InsertUpdateResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_VendAccount_InsertUpdateAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_VendAccount_InsertUpdate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BHS_ValidateOnHand">
+      <wsdl:input wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateOnHand" name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandRequest" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateOnHandResponse" name="BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandResponse" message="tns:BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/BHS_BSD_CRMSERVICEAXService/BHS_ValidateOnHandAifFaultFault" name="AifFaultFault" message="tns:BHS_BSD_CRMSERVICEAXService_BHS_ValidateOnHand_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
