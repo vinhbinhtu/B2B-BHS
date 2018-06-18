@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\History DMS service\DMSService_Huy_21042018\DMSService\Service Publish AX</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/DMSService.dll">
+      <publishTime>05/14/2018 08:50:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Crm.Sdk.Proxy.dll">
+      <publishTime>12/10/2016 12:39:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.IdentityModel.dll">
+      <publishTime>07/26/2012 14:12:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Xrm.Client.dll">
+      <publishTime>02/11/2015 22:37:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Xrm.Sdk.Deployment.dll">
+      <publishTime>04/24/2015 12:47:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Xrm.Sdk.dll">
+      <publishTime>12/10/2016 12:52:24</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/03/2013 02:10:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/19/2015 10:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/19/2015 10:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/19/2015 10:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/19/2015 10:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/19/2015 10:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/19/2015 10:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/19/2015 10:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/19/2015 10:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/19/2015 10:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/19/2015 10:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/19/2015 10:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/19/2015 10:19:46</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>08/18/2016 09:52:25</publishTime>
+    </File>
+    <File Include="DMS.svc">
+      <publishTime>08/18/2016 09:48:01</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/18/2016 09:59:27</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/31/2018 14:02:20</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/14/2018 08:50:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

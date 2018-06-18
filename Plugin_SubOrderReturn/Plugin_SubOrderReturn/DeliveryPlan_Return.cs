@@ -140,7 +140,7 @@ namespace Plugin_SubOrderReturn
                     }
                     catch (Exception ex)
                     {
-                        throw new Exception(ex.Message + trace);
+                        throw new Exception("Plugin_SubOrderReturn:"+ ex.Message + trace);
                     }
                 }
 

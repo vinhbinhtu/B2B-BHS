@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="backupdeliverybill.cs" />
     <Compile Include="DeliveryBill.cs" />
     <Compile Include="DeliveryNote.cs" />
     <Compile Include="DeliveryNoteProduct.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="DeliveryPlan.cs" />
     <Compile Include="DeliveryPlanTruck.cs" />
     <Compile Include="DeliveryBillProduct.cs" />
+    <Compile Include="DeliverySchedule.cs" />
     <Compile Include="ExChangeRate.cs" />
     <Compile Include="Model\DeliveryPlanTruck_Item.cs" />
     <Compile Include="Model\OrderProduct_Custom.cs" />
@@ -283,6 +285,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DeliveryPlugin.sln" />
     <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net20\Newtonsoft.Json.dll" />
     <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net20\Newtonsoft.Json.xml" />
     <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net35\Newtonsoft.Json.dll" />

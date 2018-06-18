@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="255ba832-972b-4c3c-9706-d1919cf77989" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BHS_BSD_CRMSERVICEAXServiceGroup7.xsd" MetadataType="Schema" ID="fcc50f5b-2bca-4148-ac96-0b2a978ce6c6" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd4" />
+    <MetadataFile FileName="BHS_BSD_CRMSERVICEAXServiceGroup71.xsd" MetadataType="Schema" ID="9d3de94f-018f-430e-b11f-d618dfb7a24c" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd5" />
+    <MetadataFile FileName="BHS_BSD_CRMSERVICEAXServiceGroup2.wsdl" MetadataType="Wsdl" ID="96587417-cc5c-4951-ac2a-1636a5bc1788" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup" />
+    <MetadataFile FileName="BHS_BSD_CRMSERVICEAXServiceGroup21.wsdl" MetadataType="Wsdl" ID="e4bbc289-bd1e-47f4-bf90-627090aaeee4" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="BHS_BSD_CRMSERVICEAXServiceGroup72.xsd" MetadataType="Schema" ID="e59ff6e4-2612-4d8f-96e6-7d23dfb40c1b" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd2" />
+    <MetadataFile FileName="BHS_BSD_CRMSERVICEAXServiceGroup73.xsd" MetadataType="Schema" ID="540181e0-c357-4352-8b93-a6962b0e94e3" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd3" />
+    <MetadataFile FileName="BHS_BSD_CRMSERVICEAXServiceGroup74.xsd" MetadataType="Schema" ID="25b1ed33-d547-4a10-a3da-6f9bbade74d4" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd0" />
+    <MetadataFile FileName="BHS_BSD_CRMSERVICEAXServiceGroup75.xsd" MetadataType="Schema" ID="925a751b-3550-4447-86d1-c20c19892ac6" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd1" />
+    <MetadataFile FileName="BHS_BSD_CRMSERVICEAXServiceGroup76.xsd" MetadataType="Schema" ID="3704a435-82e0-459c-a5dc-006361c24df8" SourceId="1" SourceUrl="http://10.33.21.1:8101/DynamicsAx/Services/BHS_BSD_CRMSERVICEAXServiceGroup?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

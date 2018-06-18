@@ -213,7 +213,7 @@ namespace Plugin_SubOrderReturn
                     #region lấy bảng giá tạo suborder gần nhất
                     EntityCollection list = PriceList(((EntityReference)returnorder["bsd_potentialcustomer"]).Id);
                     if (!list.Entities.Any()) throw new Exception("not found Price List.");
-                    SubOrder["bsd_pricelist"] =(EntityReference) list.Entities.First()["bsd_pricelist"];
+                    SubOrder["bsd_pricelist"] = (EntityReference)list.Entities.First()["bsd_pricelist"];
                     #endregion
                 }
                 Guid suborder_id = myService.service.Create(SubOrder);
@@ -254,6 +254,7 @@ namespace Plugin_SubOrderReturn
                     sub_product["bsd_giasauthue"] = orderproduct["bsd_giasauthue"];
                     sub_product["bsd_amount"] = orderproduct["bsd_amount"];
                     if (orderproduct.HasValue("bsd_itemsalestaxgroup")) sub_product["bsd_itemsalestaxgroup"] = orderproduct["bsd_itemsalestaxgroup"];
+                    else throw new Exception(orderproduct["bsd_name"]+" item sales tax group is not null");
                     if (orderproduct.HasValue("bsd_unit")) sub_product["bsd_unit"] = orderproduct["bsd_unit"];
                     if (orderproduct.HasValue("bsd_usingtax")) sub_product["bsd_usingtax"] = orderproduct["bsd_usingtax"];
                     if (orderproduct.HasValue("bsd_currencyexchange"))
@@ -584,12 +585,12 @@ namespace Plugin_SubOrderReturn
                                     <order attribute='createdon' descending='true' />
                                     <filter type='and'>
                                           <condition attribute='bsd_pricelist' operator='not-null' />
-                                            <condition attribute='bsd_potentialcustomer' operator='eq'  uitype='account' value='"+ bsd_potentialcustomerId + @"' />
+                                            <condition attribute='bsd_potentialcustomer' operator='eq'  uitype='account' value='" + bsd_potentialcustomerId + @"' />
                                     </filter>
                                   </entity>
                                 </fetch>");
             EntityCollection list = myService.service.RetrieveMultiple(new FetchExpression(xml_suborder));
-            if(!list.Entities.Any())
+            if (!list.Entities.Any())
             {
                 xml_suborder = string.Format(@"<fetch version='1.0' top='1' output-format='xml-platform' mapping='logical' distinct='false'>
                                   <entity name='bsd_suborder'>
@@ -604,7 +605,7 @@ namespace Plugin_SubOrderReturn
                                     </filter>
                                   </entity>
                                 </fetch>");
-                 list = myService.service.RetrieveMultiple(new FetchExpression(xml_suborder));
+                list = myService.service.RetrieveMultiple(new FetchExpression(xml_suborder));
             }
             return list;
         }
@@ -634,7 +635,7 @@ namespace Plugin_SubOrderReturn
             new_suborder["bsd_totaltax"] = new Money(total_tax);
             new_suborder["bsd_totalamount"] = new Money(total_amount);
             new_suborder["bsd_totalcurrencyexchange"] = new Money(0); //vinhlh Money 09-01-2018
-
+            //new_suborder["bsd_description"] = "Return order no resource";
             myService.Update(new_suborder);
 
         }

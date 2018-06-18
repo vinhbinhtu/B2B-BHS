@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{732F0CFD-CE02-42E1-989F-3B4998E6E086}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Plugin_UpdateWareHouseProduct</RootNamespace>
+    <AssemblyName>Plugin_UpdateWareHouseProduct</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Crm.Sdk.Proxy">
+      <HintPath>..\..\..\VINH TTC\06. Application\SDK\Bin\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk">
+      <HintPath>..\..\..\VINH TTC\06. Application\SDK\Bin\Microsoft.Xrm.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServiceReferenceAIF\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <Compile Include="Utilites.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="key.snk" />
+    <None Include="Service References\ServiceReferenceAIF\BHS_BSD_CRMSERVICEAXServiceGroup2.wsdl" />
+    <None Include="Service References\ServiceReferenceAIF\BHS_BSD_CRMSERVICEAXServiceGroup21.wsdl" />
+    <None Include="Service References\ServiceReferenceAIF\BHS_BSD_CRMSERVICEAXServiceGroup7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\BHS_BSD_CRMSERVICEAXServiceGroup71.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\BHS_BSD_CRMSERVICEAXServiceGroup72.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\BHS_BSD_CRMSERVICEAXServiceGroup73.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\BHS_BSD_CRMSERVICEAXServiceGroup74.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\BHS_BSD_CRMSERVICEAXServiceGroup75.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\BHS_BSD_CRMSERVICEAXServiceGroup76.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_DeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_AccountClassification_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_Area_DeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_Area_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_DeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_BankAccount_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_DeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_BankGroup_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_CancelSalesOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_Country_DeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_Country_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_CreateMoveOutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_DeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_CustAccount_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_DeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_CustGroup_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_DelectAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_District_DeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_District_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_InsertAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_Province_DeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_Province_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCodeGroup_DeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_ReasonCode_DeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_Region_DeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_Region_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_ResonCodeGroup_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_ResonCode_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_Segment_DeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_Segment_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_ValidateAddressAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceDueDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceOneResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_ValidateCustOpenBalanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHandResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_ValidateOnHand_RequestDeliveryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceBHS_VendAccount_InsertUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceCheckSalesTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceCreatePickingListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceTestMethodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceUpdateAddressSalesOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceAIF\Plugin_UpdateWareHouseProduct.ServiceReferenceAIF.BHS_BSD_CRMSERVICEAXServiceUpdateSalesPriceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReferenceAIF\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceAIF\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceAIF\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceAIF\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

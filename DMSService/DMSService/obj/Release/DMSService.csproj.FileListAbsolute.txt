@@ -1,0 +1,248 @@
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\roslyn\csc.exe
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\roslyn\vbc.exe
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\DMSService.dll.config
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\DMSService.dll
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\DMSService.pdb
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\Microsoft.Xrm.Client.dll
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\Microsoft.Xrm.Sdk.dll
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\Newtonsoft.Json.dll
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\Microsoft.Xrm.Sdk.Deployment.dll
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\Microsoft.Xrm.Sdk.xml
+C:\Users\binhht\Desktop\DMSService\DMSService\bin\Microsoft.Xrm.Sdk.Deployment.xml
+C:\Users\binhht\Desktop\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
+C:\Users\binhht\Desktop\DMSService\DMSService\obj\Release\DMSService.dll
+C:\Users\binhht\Desktop\DMSService\DMSService\obj\Release\DMSService.pdb
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\roslyn\csc.exe
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\roslyn\System.Collections.Immutable.dll
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\roslyn\System.Reflection.Metadata.dll
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\roslyn\vbc.exe
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe.config
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\DMSService.dll.config
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\DMSService.dll
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\DMSService.pdb
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\Microsoft.IdentityModel.dll
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\bin\Newtonsoft.Json.dll
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\obj\Release\DMSService.dll
+E:\Sources\00_Service_DMS_CRM\DMSService_05092016\DMSService\DMSService\obj\Release\DMSService.pdb
+D:\source\DMSService\DMSService\DMSService\bin\roslyn\csc.exe
+D:\source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\source\DMSService\DMSService\DMSService\bin\roslyn\System.Collections.Immutable.dll
+D:\source\DMSService\DMSService\DMSService\bin\roslyn\System.Reflection.Metadata.dll
+D:\source\DMSService\DMSService\DMSService\bin\roslyn\vbc.exe
+D:\source\DMSService\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe
+D:\source\DMSService\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe.config
+D:\source\DMSService\DMSService\DMSService\bin\DMSService.dll.config
+D:\source\DMSService\DMSService\DMSService\bin\DMSService.dll
+D:\source\DMSService\DMSService\DMSService\bin\DMSService.pdb
+D:\source\DMSService\DMSService\DMSService\bin\Microsoft.IdentityModel.dll
+D:\source\DMSService\DMSService\DMSService\bin\Newtonsoft.Json.dll
+D:\source\DMSService\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
+D:\source\DMSService\DMSService\DMSService\obj\Release\DMSService.dll
+D:\source\DMSService\DMSService\DMSService\obj\Release\DMSService.pdb
+D:\DMSService\DMSService\DMSService\bin\roslyn\csc.exe
+D:\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DMSService\DMSService\DMSService\bin\roslyn\System.Collections.Immutable.dll
+D:\DMSService\DMSService\DMSService\bin\roslyn\System.Reflection.Metadata.dll
+D:\DMSService\DMSService\DMSService\bin\roslyn\vbc.exe
+D:\DMSService\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe
+D:\DMSService\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe.config
+D:\DMSService\DMSService\DMSService\bin\DMSService.dll.config
+D:\DMSService\DMSService\DMSService\bin\DMSService.dll
+D:\DMSService\DMSService\DMSService\bin\DMSService.pdb
+D:\DMSService\DMSService\DMSService\bin\Microsoft.IdentityModel.dll
+D:\DMSService\DMSService\DMSService\bin\Newtonsoft.Json.dll
+D:\DMSService\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
+D:\DMSService\DMSService\DMSService\obj\Release\DMSService.dll
+D:\DMSService\DMSService\DMSService\obj\Release\DMSService.pdb
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\csc.exe
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\System.Collections.Immutable.dll
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\System.Reflection.Metadata.dll
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\vbc.exe
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe.config
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\DMSService.dll.config
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\DMSService.dll
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\DMSService.pdb
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\Microsoft.IdentityModel.dll
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\Newtonsoft.Json.dll
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\obj\Release\DMSService.dll
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\obj\Release\DMSService.pdb
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\Microsoft.Crm.Sdk.Proxy.dll
+D:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\Microsoft.Xrm.Sdk.dll
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\csc.exe
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\System.Collections.Immutable.dll
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\System.Reflection.Metadata.dll
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\vbc.exe
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe.config
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\DMSService.dll.config
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\DMSService.dll
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\DMSService.pdb
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\Microsoft.Crm.Sdk.Proxy.dll
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\Microsoft.IdentityModel.dll
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\Microsoft.Xrm.Sdk.dll
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\bin\Newtonsoft.Json.dll
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\obj\Release\DMSService.dll
+E:\BackUpDuLieu_BSD\Ổ D\Dynamic CRM\01. Source\DMSService\DMSService\DMSService\obj\Release\DMSService.pdb
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\csc.exe
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\System.Collections.Immutable.dll
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\System.Reflection.Metadata.dll
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\vbc.exe
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe.config
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\DMSService.dll.config
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\DMSService.dll
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\DMSService.pdb
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\Microsoft.IdentityModel.dll
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\Newtonsoft.Json.dll
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\obj\Release\DMSService.dll
+E:\BitBucket\B2B\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\obj\Release\DMSService.pdb
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\csc.exe
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\System.Collections.Immutable.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\System.Reflection.Metadata.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\vbc.exe
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe.config
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\DMSService.dll.config
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\DMSService.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\DMSService.pdb
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\Microsoft.IdentityModel.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\Newtonsoft.Json.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\obj\Release\DMSService.dll
+D:\B2B - Source\B2B-V2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\obj\Release\DMSService.pdb
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\csc.exe
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\System.Collections.Immutable.dll
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\System.Reflection.Metadata.dll
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\vbc.exe
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe.config
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\DMSService.dll.config
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\DMSService.dll
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\DMSService.pdb
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\Microsoft.IdentityModel.dll
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\bin\Newtonsoft.Json.dll
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\obj\Release\DMSService.dll
+E:\BitBucket\B2B-v2\b2b\solution_bsd\PLUGIN\B2B-CRM\DMSService\DMSService\obj\Release\DMSService.pdb
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\roslyn\csc.exe
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\roslyn\System.Collections.Immutable.dll
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\roslyn\System.Reflection.Metadata.dll
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\roslyn\vbc.exe
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe.config
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\DMSService.dll.config
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\DMSService.dll
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\DMSService.pdb
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\Microsoft.IdentityModel.dll
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\bin\Newtonsoft.Json.dll
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\obj\Release\DMSService.dll
+D:\History DMS service\DMSService_07042018\DMSService\DMSService\obj\Release\DMSService.pdb
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\roslyn\csc.exe
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\roslyn\System.Collections.Immutable.dll
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\roslyn\System.Reflection.Metadata.dll
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\roslyn\vbc.exe
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe.config
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\DMSService.dll.config
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\DMSService.dll
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\DMSService.pdb
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\Microsoft.IdentityModel.dll
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\bin\Newtonsoft.Json.dll
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\obj\Release\DMSService.dll
+E:\HuyCRM\Document B2B - Huy\Service\DMSService21042018\DMSService\DMSService\obj\Release\DMSService.pdb
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\roslyn\csc.exe
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\roslyn\System.Collections.Immutable.dll
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\roslyn\System.Reflection.Metadata.dll
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\roslyn\vbc.exe
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe.config
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\DMSService.dll.config
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\DMSService.dll
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\DMSService.pdb
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\Microsoft.IdentityModel.dll
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\Newtonsoft.Json.dll
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\obj\Release\DMSService.dll
+D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\obj\Release\DMSService.pdb

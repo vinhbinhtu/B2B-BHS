@@ -63,7 +63,7 @@ namespace Plugin_TransferAX
                         decimal bsd_totalamount = 0m;
                         string bsd_economiccontractno = "";
                         string bsd_potentialcustomer = "";//lookup
-                        Guid bsd_potentialcustomerid=Guid.Empty;
+                        Guid bsd_potentialcustomerid = Guid.Empty;
                         string bsd_accountgroup = "OV";
                         string DimensionAtt = "BH_SalesAgreement";
                         string DimensionAttCustomer = "BH_Customer";
@@ -267,10 +267,12 @@ namespace Plugin_TransferAX
 
                         }
                         //bsd_paymentmethod
+                        Guid CurrencyID=Guid.Empty;
                         if (suborder.HasValue("transactioncurrencyid"))
                         {
                             EntityReference rf_Entity = (EntityReference)suborder["transactioncurrencyid"];
                             Entity Entity = service.Retrieve(rf_Entity.LogicalName, rf_Entity.Id, new ColumnSet("isocurrencycode"));
+                            CurrencyID = rf_Entity.Id;
                             if (Entity.HasValue("isocurrencycode"))
                                 bsd_currencydefault = Entity["isocurrencycode"].ToString();
                         }
@@ -421,6 +423,7 @@ namespace Plugin_TransferAX
                                 string SalesId_Return = "";
                                 Entity entityReturnOrder = service.Retrieve(rf_Entity.LogicalName, rf_Entity.Id, new ColumnSet(true));
                                 RMA_Number = entityReturnOrder["bsd_name"].ToString().Trim();
+
                                 if (entityReturnOrder.HasValue("bsd_findsuborder"))
                                 {
                                     DateTime bsd_date = new DateTime();
@@ -509,9 +512,9 @@ namespace Plugin_TransferAX
 
                                         }
                                         //throw new Exception(bsd_customercode + "-" + bsd_returnreasoncode + "-" + RMA_Number + "-" + bsd_date.AddHours(7) + "-" + entity["bsd_suborderax"].ToString() + "-" + bsd_addressinvoiceaccount_Guid + "-" + bsd_invoicenameaccount + "-" + lst_SalesLine +"-"+ bsd_totalamount*bsd_exchangeratevalue + "--"+ bsd_exchangeratevalue);
-
+                                        //throw new Exception("ok" + entity["bsd_suborderax"].ToString());
                                         string s_Result = client.BHS_CreateReturnSalesOrder(context, bsd_customercode, bsd_returnreasoncode, "", RMA_Number, bsd_date.AddHours(7), entity["bsd_suborderax"].ToString(), bsd_addressinvoiceaccount_Guid, bsd_invoicenameaccount, lst_SalesLine, bsd_totalamount * bsd_exchangeratevalue, bsd_exchangeratevalue);
-                                        if (!s_Result.Contains("true")) throw new Exception(s_Result);
+                                        if (!s_Result.Contains("true")) throw new Exception("Create return order Exception-" + s_Result);
                                         SalesId_Return = s_Result.Replace("true", "");
                                         #endregion
 
@@ -543,7 +546,13 @@ namespace Plugin_TransferAX
                                 }
                                 else
                                 {
-                                    // throw new Exception("Return order does not found base Suborder");
+                                    //throw new Exception("oke");
+                                    //if (suborder.HasValue("bsd_description"))
+                                    //{
+                                    //    if (!(suborder["bsd_description"].ToString().Trim().Equals("Return order no resource")))
+                                    //        throw new Exception("Return order does not found base Suborder");
+                                    //}
+                                    //else throw new Exception("Return order does not found base Suborder");
                                     #region Đơn hàng trả ko rõ nguôn gốc
                                     DateTime bsd_date = new DateTime();
                                     string bsd_returnreasoncode = "";//lookup
@@ -613,9 +622,9 @@ namespace Plugin_TransferAX
                                     }
                                     //throw new Exception(bsd_customercode + "-" + bsd_returnreasoncode + "-" + RMA_Number + "-" + bsd_date.AddHours(7) + "-" + entity["bsd_suborderax"].ToString() + "-" + bsd_addressinvoiceaccount_Guid + "-" + bsd_invoicenameaccount + "-" + lst_SalesLine +"-"+ bsd_totalamount*bsd_exchangeratevalue + "--"+ bsd_exchangeratevalue);
                                     // throw new Exception("Ex");
-                                    string bsd_suborderax = getSubOrderHistoryExample(bsd_potentialcustomerid);
+                                    string bsd_suborderax = getSubOrderHistoryExample(bsd_potentialcustomerid,CurrencyID);
                                     string s_Result = client.BHS_CreateReturnSalesOrder(context, bsd_customercode, bsd_returnreasoncode, "", RMA_Number, bsd_date.AddHours(7), bsd_suborderax, bsd_addressinvoiceaccount_Guid, bsd_invoicenameaccount, lst_SalesLine, bsd_totalamount * bsd_exchangeratevalue, bsd_exchangeratevalue);
-                                    if (!s_Result.Contains("true")) throw new Exception(s_Result);
+                                    if (!s_Result.Contains("true")) throw new Exception("Create return order no resource Exception-" + s_Result);
                                     SalesId_Return = s_Result.Replace("true", "");
                                     #endregion
 
@@ -1054,7 +1063,7 @@ namespace Plugin_TransferAX
             EntityCollection list_bhstradingAccountb2b = service.RetrieveMultiple(new FetchExpression(xml));
             return list_bhstradingAccountb2b;
         }
-        public string getSubOrderHistoryExample(Guid customerAccountID)
+        public string getSubOrderHistoryExample(Guid customerAccountID, Guid CurrencyID)
         {
             string bsd_suborderax = "";
             string xml = @"<fetch version='1.0' output-format='xml-platform' top='1' mapping='logical' distinct='false'>
@@ -1065,8 +1074,9 @@ namespace Plugin_TransferAX
                                             <attribute name='bsd_suborderax' />
                                             <order attribute='createdon' descending='true' />
                                             <filter type='and'>
-                                              <condition attribute='bsd_potentialcustomer' operator='eq'  uitype='account' value='"+customerAccountID+@"' />
+                                              <condition attribute='bsd_potentialcustomer' operator='eq'  uitype='account' value='" + customerAccountID + @"' />
                                               <condition attribute='bsd_suborderax' operator='not-null' />
+                                            <condition attribute='transactioncurrencyid' operator='eq'  uitype='transactioncurrency' value='"+CurrencyID+@"' />
                                               <condition attribute='bsd_type' operator='in'>
                                                 <value>861450000</value>
                                                 <value>861450002</value>
