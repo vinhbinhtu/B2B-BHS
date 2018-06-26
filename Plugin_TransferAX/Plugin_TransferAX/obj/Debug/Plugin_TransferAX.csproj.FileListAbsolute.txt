@@ -82,3 +82,10 @@ C:\GITBUB\B2B-BHS\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferA
 C:\GITBUB\B2B-BHS\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
 C:\GITBUB\B2B-BHS\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
 C:\GITBUB\B2B-BHS\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csproj.CopyComplete
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll.config
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.dll
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_TransferAX\bin\Debug\Plugin_TransferAX.pdb
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csproj.CoreCompileInputs.cache
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.csproj.CopyComplete
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.dll
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_TransferAX\obj\Debug\Plugin_TransferAX.pdb

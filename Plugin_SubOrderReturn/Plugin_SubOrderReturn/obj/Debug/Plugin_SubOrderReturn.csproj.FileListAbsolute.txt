@@ -73,3 +73,9 @@ C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_S
 C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.csproj.CopyComplete
 C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.dll
 C:\GITBUB\B2B-BHS\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.pdb
+C:\GITBUB\BHS\trunk\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.dll
+C:\GITBUB\BHS\trunk\Plugin_SubOrderReturn\Plugin_SubOrderReturn\bin\Debug\Plugin_SubOrderReturn.pdb
+C:\GITBUB\BHS\trunk\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.csproj.CoreCompileInputs.cache
+C:\GITBUB\BHS\trunk\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.csproj.CopyComplete
+C:\GITBUB\BHS\trunk\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.dll
+C:\GITBUB\BHS\trunk\Plugin_SubOrderReturn\Plugin_SubOrderReturn\obj\Debug\Plugin_SubOrderReturn.pdb

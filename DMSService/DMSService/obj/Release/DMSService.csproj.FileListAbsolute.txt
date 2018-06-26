@@ -246,3 +246,25 @@ D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\bin\Newtons
 D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
 D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\obj\Release\DMSService.dll
 D:\History DMS service\DMSService_Huy_21042018\DMSService\DMSService\obj\Release\DMSService.pdb
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\roslyn\csc.exe
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\roslyn\System.Collections.Immutable.dll
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\roslyn\System.Reflection.Metadata.dll
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\roslyn\vbc.exe
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\roslyn\VBCSCompiler.exe.config
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\DMSService.dll.config
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\DMSService.dll
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\DMSService.pdb
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\Microsoft.IdentityModel.dll
+C:\GITBUB\BHS\trunk\DMSService\DMSService\bin\Newtonsoft.Json.dll
+C:\GITBUB\BHS\trunk\DMSService\DMSService\obj\Release\DMSService.csprojResolveAssemblyReference.cache
+C:\GITBUB\BHS\trunk\DMSService\DMSService\obj\Release\DMSService.csproj.CoreCompileInputs.cache
+C:\GITBUB\BHS\trunk\DMSService\DMSService\obj\Release\DMSService.csproj.CopyComplete
+C:\GITBUB\BHS\trunk\DMSService\DMSService\obj\Release\DMSService.dll
+C:\GITBUB\BHS\trunk\DMSService\DMSService\obj\Release\DMSService.pdb

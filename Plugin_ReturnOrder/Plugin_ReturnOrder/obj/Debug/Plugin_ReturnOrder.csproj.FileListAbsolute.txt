@@ -60,3 +60,8 @@ C:\GITBUB\B2B-BHS\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnO
 C:\GITBUB\B2B-BHS\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.csproj.CoreCompileInputs.cache
 C:\GITBUB\B2B-BHS\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.dll
 C:\GITBUB\B2B-BHS\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.pdb
+C:\GITBUB\BHS\trunk\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.dll
+C:\GITBUB\BHS\trunk\Plugin_ReturnOrder\Plugin_ReturnOrder\bin\Debug\Plugin_ReturnOrder.pdb
+C:\GITBUB\BHS\trunk\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.csproj.CoreCompileInputs.cache
+C:\GITBUB\BHS\trunk\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.dll
+C:\GITBUB\BHS\trunk\Plugin_ReturnOrder\Plugin_ReturnOrder\obj\Debug\Plugin_ReturnOrder.pdb

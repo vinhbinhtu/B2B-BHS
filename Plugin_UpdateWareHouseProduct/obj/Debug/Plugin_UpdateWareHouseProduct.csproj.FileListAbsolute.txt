@@ -52,3 +52,10 @@ C:\GITBUB\B2B-BHS\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouse
 C:\GITBUB\B2B-BHS\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.csproj.CopyComplete
 C:\GITBUB\B2B-BHS\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.dll
 C:\GITBUB\B2B-BHS\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.pdb
+C:\GITBUB\BHS\trunk\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll.config
+C:\GITBUB\BHS\trunk\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.dll
+C:\GITBUB\BHS\trunk\Plugin_UpdateWareHouseProduct\bin\Debug\Plugin_UpdateWareHouseProduct.pdb
+C:\GITBUB\BHS\trunk\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.csproj.CoreCompileInputs.cache
+C:\GITBUB\BHS\trunk\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.csproj.CopyComplete
+C:\GITBUB\BHS\trunk\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.dll
+C:\GITBUB\BHS\trunk\Plugin_UpdateWareHouseProduct\obj\Debug\Plugin_UpdateWareHouseProduct.pdb

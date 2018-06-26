@@ -1,0 +1,9 @@
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\bin\Debug\Plugin_SystemLog.dll
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\bin\Debug\Plugin_SystemLog.pdb
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\obj\Debug\Plugin_SystemLog.csproj.CoreCompileInputs.cache
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\obj\Debug\Plugin_SystemLog.csproj.CopyComplete
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\obj\Debug\Plugin_SystemLog.dll
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\obj\Debug\Plugin_SystemLog.pdb
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\bin\Debug\Newtonsoft.Json.dll

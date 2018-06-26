@@ -1,0 +1,8 @@
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\bin\Release\Plugin_SystemLog.dll
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\bin\Release\Plugin_SystemLog.pdb
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\bin\Release\Microsoft.Xrm.Sdk.dll
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\obj\Release\Plugin_SystemLog.csprojResolveAssemblyReference.cache
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\obj\Release\Plugin_SystemLog.csproj.CoreCompileInputs.cache
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\obj\Release\Plugin_SystemLog.csproj.CopyComplete
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\obj\Release\Plugin_SystemLog.dll
+C:\GITBUB\BHS\trunk\Plugin_TransferAX\Plugin_SystemLog\obj\Release\Plugin_SystemLog.pdb

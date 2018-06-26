@@ -2023,6 +2023,7 @@ namespace DeliveryPlugin
                         try
                         {
                             s_Result = client.BHS_ValidateOnHand(contextService, lst_CheckProductAX);
+                            //throw new Exception(s_Result+";"+ lst_CheckProductAX);
                         }
                         catch (Exception ex)
                         {

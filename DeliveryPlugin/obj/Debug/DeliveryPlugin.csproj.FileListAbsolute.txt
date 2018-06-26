@@ -110,3 +110,10 @@ C:\GITBUB\B2B-BHS\DeliveryPlugin\obj\Debug\DeliveryPlugin.csproj.CoreCompileInpu
 C:\GITBUB\B2B-BHS\DeliveryPlugin\obj\Debug\DeliveryPlugin.csproj.CopyComplete
 C:\GITBUB\B2B-BHS\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
 C:\GITBUB\B2B-BHS\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
+C:\GITBUB\BHS\trunk\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll.config
+C:\GITBUB\BHS\trunk\DeliveryPlugin\bin\Debug\DeliveryPlugin.dll
+C:\GITBUB\BHS\trunk\DeliveryPlugin\bin\Debug\DeliveryPlugin.pdb
+C:\GITBUB\BHS\trunk\DeliveryPlugin\obj\Debug\DeliveryPlugin.csproj.CoreCompileInputs.cache
+C:\GITBUB\BHS\trunk\DeliveryPlugin\obj\Debug\DeliveryPlugin.csproj.CopyComplete
+C:\GITBUB\BHS\trunk\DeliveryPlugin\obj\Debug\DeliveryPlugin.dll
+C:\GITBUB\BHS\trunk\DeliveryPlugin\obj\Debug\DeliveryPlugin.pdb
