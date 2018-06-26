@@ -161,7 +161,7 @@ namespace DMSService
         }
         public string InsertIssueNote(GoodsIssueNote objissuenote, string org)
         {
-            return CrmProvider.insertGoodIssueNote(objissuenote, org);
+            return CrmProvider.insertGoodIssueNoteJson(objissuenote, org);
         }
         public string insertGoodIssueNoteConsigment(GoodsIssueNote objissuenote, string org)
         {
@@ -251,6 +251,10 @@ namespace DMSService
         public string insertSize(Size obj, string org)
         {
             return CrmProvider.insertSize(obj, org);
+        }
+        public string insertSizeJson(Size obj, string org)
+        {
+            return CrmProvider.insertSizeJson(obj, org);
         }
         public bool DeleteSize(string Recid, string org)
         {
@@ -368,6 +372,18 @@ namespace DMSService
         public bool CancelPickingList(string pickingListID, string org)
         {
             return CrmProvider.CancelPickingList(pickingListID, org);
+        }
+        public string insertPurchaseOrder(TransferOrder obj, string org)
+        {
+            return CrmProvider.insertPurchaseOrder(obj, org);
+        }
+        public string CorrectPurchaseOrder(TransferOrder obj, string org)
+        {
+            return CrmProvider.CorrectPurchaseOrder(obj, org);
+        }
+        public bool CancelPurchaseOrder(string purchaseOrderId, string org)
+        {
+            return CrmProvider.CancelPurchaseOrder(purchaseOrderId, org);
         }
 
     }

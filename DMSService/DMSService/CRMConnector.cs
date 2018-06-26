@@ -45,14 +45,14 @@ namespace DMSService
                     port = "";
                 else
                     port = ":" + port;
-                //Uri crmUrl = new Uri(string.Format("{0}://{1}{2}/{3}/{4}"
-                ////Uri crmUrl = new Uri(string.Format("{0}://{1}{2}/{3}"
-                //    , GetConfig("protocol")
-                //    , GetConfig("server")
-                //    , port
-                //    , org
-                //    , GetConfig("servicePath")));
-                Uri crmUrl = new Uri("https://crmtrainning.ttcsugar.com.vn/BHSAX/XRMServices/2011/Organization.svc");
+                Uri crmUrl = new Uri(string.Format("{0}://{1}{2}/{3}/{4}"
+                //Uri crmUrl = new Uri(string.Format("{0}://{1}{2}/{3}"
+                    , GetConfig("protocol")
+                    , GetConfig("server")
+                    , port
+                    , org
+                    , GetConfig("servicePath")));
+                // Uri crmUrl = new Uri("https://crmtrainning.ttcsugar.com.vn/BHSAX/XRMServices/2011/Organization.svc");
                 ClientCredentials credential = new ClientCredentials();
                 credential.UserName.UserName = GetConfig("userName");
                 credential.UserName.Password = GetConfig("password");

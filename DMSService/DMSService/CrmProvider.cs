@@ -1666,6 +1666,33 @@ namespace DMSService
         }
         // End Vinhlh
         //vinhlh 11-09-2017
+        internal static string insertSizeJson(Size obj, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (obj != null)
+                {
+
+                    Entity entity = new Entity("bsd_systemlogservice");
+                    var json = new JavaScriptSerializer().Serialize(obj);
+                    // bsd_object
+                    entity["bsd_method"] = "create";
+                    entity["bsd_name"] = "bsd_size";
+                    entity["bsd_object"] = json.ToString();
+                    crm.Service.Create(entity);
+                    return "success";
+                }
+                return "success";
+            }
+            catch (Exception ex)
+            {
+                return "error " + ex.Message;
+                throw;
+            }
+        }
         internal static string insertSize(Size obj, string org)
         {
             try
@@ -2867,7 +2894,7 @@ namespace DMSService
                         var fetchxmm = "<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>";
                         fetchxmm += "<entity name='account'>";
                         fetchxmm += "<all-attributes />";
-                        fetchxmm += "<filter type='and'>";                      
+                        fetchxmm += "<filter type='and'>";
                         fetchxmm += "<condition attribute=' accountnumber ' operator='like' value='%" + objissuenote.InvoiceAccount + "%' />";
                         fetchxmm += "</filter>";
                         fetchxmm += "</entity>";
@@ -2880,7 +2907,7 @@ namespace DMSService
                             {
                                 deliverynote["bsd_historyreceiptcustomer"] = account["name"];
                             }
-                          
+
                         }
 
                         int request_deliverytype = ((OptionSetValue)request_delivery["bsd_type"]).Value;
@@ -3420,6 +3447,120 @@ namespace DMSService
             #endregion
             return "succces";
         }
+        // vinhlh 25-06-2018 tính giá vận chuyển Purchase Order
+        internal static string insertPurchaseOrder(TransferOrder obj, string org)
+        {
+            try
+            {
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (obj != null)
+                {
+
+                    Entity entity = new Entity("bsd_systemlogservice");
+                    var json = new JavaScriptSerializer().Serialize(obj);
+                    // bsd_object
+                    entity["bsd_method"] = "create";
+                    entity["bsd_name"] = "bsd_transferorder";
+                    entity["bsd_object"] = json.ToString();
+                    crm.Service.Create(entity);
+                }
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+            return "success";
+        }
+        internal static string CorrectPurchaseOrder(TransferOrder obj, string org)
+        {
+            try
+            {
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (obj != null)
+                {
+
+                    Entity entity = new Entity("bsd_systemlogservice");
+                    var json = new JavaScriptSerializer().Serialize(obj);
+                    // bsd_object
+                    entity["bsd_method"] = "update";
+                    entity["bsd_name"] = "bsd_transferorder";
+                    entity["bsd_object"] = json.ToString();
+                    crm.Service.Create(entity);
+                }
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+            return "success";
+        }
+        internal static bool CancelPurchaseOrder(string purchaseOrderId, string org)
+        {
+            try
+            {
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (purchaseOrderId != null)
+                {
+
+                    string id = retriveLookup("bsd_transferorder", "bsd_name", purchaseOrderId.Trim(), org);
+                    if (id != null)
+                    {
+                        // throw new Exception("okid");
+                        // Entity transferorder = crm.Service.Retrieve("bsd_transferorder", Guid.Parse(id), new ColumnSet(true));
+                        Entity transferorder_Update = new Entity("bsd_transferorder", Guid.Parse(id));
+                        transferorder_Update["bsd_description"] = "cancel from AX";
+                        SetStateRequest setStateRequest = new SetStateRequest()
+                        {
+                            EntityMoniker = new EntityReference
+                            {
+                                Id = transferorder_Update.Id,
+                                LogicalName = transferorder_Update.LogicalName
+                            },
+                            State = new OptionSetValue(1),
+                            Status = new OptionSetValue(2)
+                        };
+                        crm.Service.Execute(setStateRequest);
+                        crm.Service.Update(transferorder_Update);
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
+        }
+        //end vinhlh
+        internal static string insertGoodIssueNoteJson(GoodsIssueNote objissuenote, string org)
+        {
+   
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (objissuenote != null)
+                {
+
+                    Entity entity = new Entity("bsd_systemlogservice");
+                    var json = new JavaScriptSerializer().Serialize(objissuenote);
+                    // bsd_object
+                    entity["bsd_method"] = "create";
+                    entity["bsd_name"] = "bsd_deliverybill";
+                    entity["bsd_object"] = json.ToString();
+                    crm.Service.Create(entity);
+                }
+            }
+            catch (Exception ex)
+            {
+                return "Service CRM Error JS : " + ex.Message;
+            }
+            return "succces";
+        }
         //vinhlh 12-22-2017 Move out AX suborder kí gửi
         internal static string insertGoodIssueNoteConsigment(GoodsIssueNote objissuenote, string org)
         {
@@ -3535,7 +3676,7 @@ namespace DMSService
                         bool shippingoption = request_delivery.HasValue("bsd_shippingoption") ? (bool)request_delivery["bsd_shippingoption"] : false;
                         Entity shipping_pricelist = null;
 
-                        decimal total_shipping_price = 0m;
+                        //decimal total_shipping_price = 0m;
 
                         if (shippingoption)
                         {
@@ -4295,6 +4436,7 @@ namespace DMSService
             }
             return "success";
         }
+   
         internal static string insertInvoiceSubOrder(InvoiceSuborder obj, string org)
         {
 
@@ -4305,7 +4447,7 @@ namespace DMSService
                 var crm = new CRMConnector();
                 var pac = new PackingList();
                 crm.speceficConnectToCrm(org);
-                throw new Exception("ok");
+                // throw new Exception("ok");
                 // if (obj == null) return "InvoiceSuborder is not null";
                 if (string.IsNullOrEmpty(obj.Serial) || string.IsNullOrEmpty(obj.Invoice)) return "Serial or Invoice No. is not null";
                 if (string.IsNullOrEmpty(obj.SuborderID)) return "Sales Order ID is not null";
@@ -4376,8 +4518,8 @@ namespace DMSService
 
                                             foreach (var item in obj.PackingList)
                                             {
-                                               
-                                                    if (item.PackingListID.Equals("") || item.PackingListID.Equals(" ") || item.PackingListID.Equals("abc")) continue;
+
+                                                if (item.PackingListID.Equals("") || item.PackingListID.Equals(" ") || item.PackingListID.Equals("abc")) continue;
                                                 string xml = @"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='true'>
                                           <entity name='bsd_suborder'>
                                             <attribute name='bsd_name' />
@@ -4543,7 +4685,7 @@ namespace DMSService
                                         foreach (var item in obj.PackingList)
                                         {
                                             if (item.PackingListID.Equals("") || item.PackingListID.Equals(" ") || item.PackingListID.Equals("abc")) continue;
-                                            pack = pack  + item.PackingListID.Trim() + "-";
+                                            pack = pack + item.PackingListID.Trim() + "-";
                                         }
                                         foreach (var item in obj.PackingList)
                                         {
@@ -4614,7 +4756,7 @@ namespace DMSService
                                             if (invoicenew.HasValue("bsd_packingslip"))
                                             {
                                                 Entity inoivceaxnew = new Entity(etcinvoicesuborder.Entities.First().LogicalName, etcinvoicesuborder.Entities.First().Id);
-                                                inoivceaxnew["bsd_packingslip"] = invoicenew["bsd_packingslip"].ToString()+pack;
+                                                inoivceaxnew["bsd_packingslip"] = invoicenew["bsd_packingslip"].ToString() + pack;
                                                 crm.Service.Update(inoivceaxnew);
                                             }
                                             if (!invoicenew.HasValue("bsd_packingslip"))
@@ -4624,7 +4766,7 @@ namespace DMSService
                                                 crm.Service.Update(inoivceaxnew);
                                             }
                                         }
-                                       
+
                                         foreach (var item in obj.PackingList)
                                         {
 
@@ -4840,7 +4982,7 @@ namespace DMSService
                                                 foreach (var item in obj.PackingList)
                                                 {
                                                     if (item.PackingListID == null) continue;
-                                                    Entity suborderinvoice = etcinvoicesuborder.Entities.First();                                       
+                                                    Entity suborderinvoice = etcinvoicesuborder.Entities.First();
                                                     string deliverynoteID = retrivestringvaluelookup("bsd_deliverynote", "bsd_packinglistax", item.PackingListID.Trim(), org);
                                                     if (deliverynoteID != null)
                                                     {
@@ -5485,7 +5627,7 @@ namespace DMSService
                             foreach (var item in obj.PackingList)
                             {
                                 pack = pack + "- " + item.PackingListID.Trim();
-                            }   
+                            }
                             foreach (var item in obj.PackingList)
                             {
                                 string xmlinvoice = @"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
@@ -5576,7 +5718,7 @@ namespace DMSService
                                 }
                                 if (etcinvoicesuborder.Entities.Any())
                                 {
-                                 
+
                                     Entity inoivceaxnew = new Entity(etcinvoicesuborder.Entities.First().LogicalName, etcinvoicesuborder.Entities.First().Id);
                                     inoivceaxnew["bsd_packingslip"] = pack;
                                     crm.Service.Update(inoivceaxnew);

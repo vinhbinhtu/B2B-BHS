@@ -31,6 +31,10 @@ namespace DMSService
         public List<TransferOrderProduct> TransferOrderProduct { get; set; }
         [DataMember]
         public string RecId { get; set; }
+        [DataMember]
+        public string bsd_fromaddressid { get; set; }
+        [DataMember]
+        public string bsd_toaddressid { get; set; }
 
     }
 }
