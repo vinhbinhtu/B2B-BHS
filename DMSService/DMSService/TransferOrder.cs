@@ -35,6 +35,14 @@ namespace DMSService
         public string bsd_fromaddressid { get; set; }
         [DataMember]
         public string bsd_toaddressid { get; set; }
+        [DataMember]
+        public string bsd_vendorid { get; set; }
+        [DataMember]
+        public string bsd_vendorname { get; set; }
+        [DataMember]
+        public string bsd_vendoraddress { get; set; }
+        [DataMember]
+        public string status { get; set; }
 
     }
 }

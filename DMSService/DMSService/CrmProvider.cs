@@ -3448,8 +3448,9 @@ namespace DMSService
             return "succces";
         }
         // vinhlh 25-06-2018 tính giá vận chuyển Purchase Order
-        internal static string insertPurchaseOrder(TransferOrder obj, string org)
+        internal static TransferOrder insertPurchaseOrder(TransferOrder obj, string org)
         {
+            TransferOrder result = new TransferOrder();
             try
             {
                 var crm = new CRMConnector();
@@ -3458,13 +3459,110 @@ namespace DMSService
                 {
 
                     Entity entity = new Entity("bsd_systemlogservice");
+                    //throw new Exception(obj.TransferOrderProduct.Count.ToString());
                     var json = new JavaScriptSerializer().Serialize(obj);
                     // bsd_object
                     entity["bsd_method"] = "create";
                     entity["bsd_name"] = "bsd_transferorder";
                     entity["bsd_object"] = json.ToString();
                     crm.Service.Create(entity);
+                    result.status = "success";
+                    //get PO
+                
+                    List<TransferOrderProduct> lstProduct = new List<TransferOrderProduct>();
+                    int i = 0;
+                    result.RecId = i.ToString();
+                    string value = "";
+                    foreach (var item in obj.TransferOrderProduct)
+                    {
+                        string xml = @"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
+                                          <entity name='bsd_transferorderproduct'>
+                                            <attribute name='bsd_transferorderproductid' />
+                                            <attribute name='bsd_totalpriceshipping' />
+                                             <attribute name='bsd_name' />
+                                            <attribute name='createdon' />
+                                            <order attribute='bsd_name' descending='false' />
+                                            <filter type='and'>
+                                              <condition attribute='bsd_productid' operator='eq' value='" + item.productnumber.Trim() + @"' />
+                                              <condition attribute='bsd_codeax' operator='eq' value='" + obj.RecId.Trim() + @"' />
+                                              <condition attribute='bsd_quantity' operator='gt' value='0' />
+                                            </filter>
+                                          </entity>
+                                        </fetch>";
+                        var lst = crm.Service.RetrieveMultiple(new FetchExpression(xml));
+                        if (lst.Entities.Any())
+                        {
+                            Entity bsd_transferorderproduct = lst.Entities.First();
+                            TransferOrderProduct product = new TransferOrderProduct();
+                            product.productnumber = item.productnumber.Trim();
+                            product.RecId = item.RecId;
+                            decimal bsd_totalpriceshipping = 0m;
+                            if (bsd_transferorderproduct.HasValue("bsd_totalpriceshipping")) bsd_totalpriceshipping = ((Money)bsd_transferorderproduct["bsd_totalpriceshipping"]).Value;
+                            product.bsd_totalpriceshipping = bsd_totalpriceshipping;
+                            lstProduct.Add(product);
+                            if (i == 0)
+                                value =item.RecId.Trim()+":"+item.productnumber.Trim() + ":" + bsd_totalpriceshipping;
+                            else value +=";"+item.RecId.Trim() + ":" +item.productnumber.Trim() + ":" + bsd_totalpriceshipping;
+                            i++;
+
+                            //result.TransferOrderProduct.Add(product);
+                        }
+                    }
+                    result.RecId = i.ToString();
+                    result.bsd_description = value;
+                    result.TransferOrderProduct = lstProduct;
                 }
+            }
+            catch (Exception ex)
+            {
+                result.status = ex.Message;
+                //return ex.Message;
+            }
+            return result;
+            //return "success";
+        }
+        internal static string UpdatePorterPurchaseOrder(string PO, string ProductReceipt, string ProductId, decimal Amount, string org)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(PO.Trim())) return "Purchase Order Id is not null";
+                if (string.IsNullOrEmpty(ProductReceipt.Trim())) return "Product Receipt Id is not null";
+                if (string.IsNullOrEmpty(ProductId.Trim())) return "Product Id is not null";
+                if (string.IsNullOrEmpty(Amount.ToString().Trim())) return "Amount is not null";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                string id = retriveLookup("bsd_transferorder", "bsd_name", PO.Trim(), org);
+                if (string.IsNullOrEmpty(id)) return "Purchase Order Id not found in CRM";
+                string xml = @"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
+                                  <entity name='bsd_transferorderproduct'>
+                                    <attribute name='bsd_transferorderproductid' />
+                                    <attribute name='bsd_name' />
+                                    <attribute name='createdon' />
+                                    <order attribute='bsd_name' descending='false' />
+                                    <filter type='and'>
+                                      <condition attribute='bsd_codeax' operator='eq' value='" + ProductReceipt.Trim() + @"' />
+                                      <condition attribute='bsd_transferorder' operator='eq'  uitype='bsd_transferorder' value='" + Guid.Parse(id) + @"' />
+                                    </filter>
+                                  </entity>
+                                </fetch>";
+                var lst = crm.Service.RetrieveMultiple(new FetchExpression(xml));
+                if (lst.Entities.Any())
+                {
+                    Entity PO_Update = new Entity("bsd_transferorder", Guid.Parse(id));
+                    decimal bsd_totalpriceporter = 0m;
+                    foreach (var item in lst.Entities)
+                    {
+                        Entity Update = new Entity(item.LogicalName, item.Id);
+                        Update["bsd_totalpriceporter"] = new Money(Amount);
+                        if (item["bsd_productid"].ToString().Trim() == ProductId.Trim())
+                            crm.Service.Update(Update);
+                        if (item.HasValue("bsd_totalpriceporter")) bsd_totalpriceporter += ((Money)item["bsd_totalpriceporter"]).Value;
+                    }
+                    PO_Update["bsd_totalpriceporter"] = new Money(bsd_totalpriceporter + Amount);
+                    crm.Service.Update(PO_Update);
+                }
+
+
             }
             catch (Exception ex)
             {
@@ -3472,8 +3570,9 @@ namespace DMSService
             }
             return "success";
         }
-        internal static string CorrectPurchaseOrder(TransferOrder obj, string org)
+        internal static TransferOrder CorrectPurchaseOrder(TransferOrder obj, string org)
         {
+            TransferOrder result = new TransferOrder();
             try
             {
                 var crm = new CRMConnector();
@@ -3488,13 +3587,54 @@ namespace DMSService
                     entity["bsd_name"] = "bsd_transferorder";
                     entity["bsd_object"] = json.ToString();
                     crm.Service.Create(entity);
+                    result.status = "success";
+                    List<TransferOrderProduct> lstProduct = new List<TransferOrderProduct>();
+                    int i = 0;
+                    string value = "";
+                    foreach (var item in obj.TransferOrderProduct)
+                    {
+                        string xml = @"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
+                                          <entity name='bsd_transferorderproduct'>
+                                            <attribute name='bsd_transferorderproductid' />
+                                            <attribute name='bsd_totalpriceshipping' />
+                                             <attribute name='bsd_name' />
+                                            <attribute name='createdon' />
+                                            <order attribute='bsd_name' descending='false' />
+                                            <filter type='and'>
+                                              <condition attribute='bsd_productid' operator='eq' value='" + item.productnumber.Trim() + @"' />
+                                              <condition attribute='bsd_codeax' operator='eq' value='" + obj.RecId.Trim() + @"' />
+                                              <condition attribute='bsd_quantity' operator='gt' value='0' />
+                                            </filter>
+                                          </entity>
+                                        </fetch>";
+                        var lst = crm.Service.RetrieveMultiple(new FetchExpression(xml));
+                        if (lst.Entities.Any())
+                        {
+                            Entity bsd_transferorderproduct = lst.Entities.First();
+                            TransferOrderProduct product = new TransferOrderProduct();
+                            product.productnumber = item.productnumber.Trim();
+                            product.RecId = item.RecId;
+                            decimal bsd_totalpriceshipping = 0m;
+                            if (bsd_transferorderproduct.HasValue("bsd_totalpriceshipping")) bsd_totalpriceshipping = ((Money)bsd_transferorderproduct["bsd_totalpriceshipping"]).Value;
+                            product.bsd_totalpriceshipping = bsd_totalpriceshipping;
+                            lstProduct.Add(product);
+                            if (i == 0)
+                                value = item.RecId.Trim() + ":" + item.productnumber.Trim() + ":" + bsd_totalpriceshipping;
+                            else value += ";" + item.RecId.Trim() + ":" + item.productnumber.Trim() + ":" + bsd_totalpriceshipping;
+                            i++;
+                            //result.TransferOrderProduct.Add(product);
+                        }
+                    }
+                    result.RecId = i.ToString();
+                    result.bsd_description = value;
+                    result.TransferOrderProduct = lstProduct;
                 }
             }
             catch (Exception ex)
             {
-                return ex.Message;
+                result.status = ex.Message;
             }
-            return "success";
+            return result;
         }
         internal static bool CancelPurchaseOrder(string purchaseOrderId, string org)
         {
@@ -3504,8 +3644,7 @@ namespace DMSService
                 crm.speceficConnectToCrm(org);
                 if (purchaseOrderId != null)
                 {
-
-                    string id = retriveLookup("bsd_transferorder", "bsd_name", purchaseOrderId.Trim(), org);
+                    string id = retriveLookup("bsd_transferorder", "bsd_codeax", purchaseOrderId.Trim(), org);
                     if (id != null)
                     {
                         // throw new Exception("okid");
@@ -3537,7 +3676,7 @@ namespace DMSService
         //end vinhlh
         internal static string insertGoodIssueNoteJson(GoodsIssueNote objissuenote, string org)
         {
-   
+
             try
             {
                 //org = "B2B";
@@ -3557,7 +3696,7 @@ namespace DMSService
             }
             catch (Exception ex)
             {
-                return "Service CRM Error JS : " + ex.Message;
+                return ex.Message;
             }
             return "succces";
         }
@@ -4436,7 +4575,7 @@ namespace DMSService
             }
             return "success";
         }
-   
+
         internal static string insertInvoiceSubOrder(InvoiceSuborder obj, string org)
         {
 
@@ -4621,8 +4760,7 @@ namespace DMSService
                                         if (obj.TotalTax.ToString() != null)
                                             entity["bsd_totaltax"] = new Money(obj.TotalTax);
                                         if (obj.ExchangeRate.ToString() != null)
-                                            i = "1.8";
-                                        entity["bsd_exchangerate"] = obj.ExchangeRate;
+                                            entity["bsd_exchangerate"] = obj.ExchangeRate;
                                         if (obj.ExtendedAmount.ToString() != null)
                                             entity["bsd_extendedamount"] = new Money(obj.ExtendedAmount);
                                         i = "1.9";
@@ -4713,8 +4851,8 @@ namespace DMSService
                                                 if (obj.TotalTax.ToString() != null)
                                                     entity["bsd_totaltax"] = new Money(obj.TotalTax);
                                                 if (obj.ExchangeRate.ToString() != null)
-                                                    i = "1.8";
-                                                entity["bsd_exchangerate"] = obj.ExchangeRate;
+
+                                                    entity["bsd_exchangerate"] = obj.ExchangeRate;
                                                 if (obj.ExtendedAmount.ToString() != null)
                                                     entity["bsd_extendedamount"] = new Money(obj.ExtendedAmount);
                                                 i = "1.9";
@@ -4904,8 +5042,8 @@ namespace DMSService
                                         if (obj.TotalTax.ToString() != null)
                                             entity["bsd_totaltax"] = new Money(obj.TotalTax);
                                         if (obj.ExchangeRate.ToString() != null)
-                                            i = "1.8";
-                                        entity["bsd_exchangerate"] = obj.ExchangeRate;
+
+                                            entity["bsd_exchangerate"] = obj.ExchangeRate;
                                         if (obj.ExtendedAmount.ToString() != null)
                                             entity["bsd_extendedamount"] = new Money(obj.ExtendedAmount);
                                         i = "1.9";
@@ -5165,7 +5303,7 @@ namespace DMSService
                     //                    if (obj.TotalTax.ToString() != null)
                     //                        entity["bsd_totaltax"] = new Money(obj.TotalTax);
                     //                    if (obj.ExchangeRate.ToString() != null)
-                    //                        i = "1.8";
+                    //                        
                     //                    entity["bsd_exchangerate"] = obj.ExchangeRate;
                     //                    if (obj.ExtendedAmount.ToString() != null)
                     //                        entity["bsd_extendedamount"] = new Money(obj.ExtendedAmount);
@@ -5251,7 +5389,7 @@ namespace DMSService
                     //                            if (obj.TotalTax.ToString() != null)
                     //                                entity["bsd_totaltax"] = new Money(obj.TotalTax);
                     //                            if (obj.ExchangeRate.ToString() != null)
-                    //                                i = "1.8";
+                    //                                
                     //                            entity["bsd_exchangerate"] = obj.ExchangeRate;
                     //                            if (obj.ExtendedAmount.ToString() != null)
                     //                                entity["bsd_extendedamount"] = new Money(obj.ExtendedAmount);
@@ -5445,7 +5583,7 @@ namespace DMSService
                     //                    if (obj.TotalTax.ToString() != null)
                     //                        entity["bsd_totaltax"] = new Money(obj.TotalTax);
                     //                    if (obj.ExchangeRate.ToString() != null)
-                    //                        i = "1.8";
+                    //                        
                     //                    entity["bsd_exchangerate"] = obj.ExchangeRate;
                     //                    if (obj.ExtendedAmount.ToString() != null)
                     //                        entity["bsd_extendedamount"] = new Money(obj.ExtendedAmount);
@@ -5670,8 +5808,8 @@ namespace DMSService
                                     if (obj.TotalTax.ToString() != null)
                                         entity["bsd_totaltax"] = new Money(obj.TotalTax);
                                     if (obj.ExchangeRate.ToString() != null)
-                                        i = "1.8";
-                                    entity["bsd_exchangerate"] = obj.ExchangeRate;
+
+                                        entity["bsd_exchangerate"] = obj.ExchangeRate;
                                     if (obj.ExtendedAmount.ToString() != null)
                                         entity["bsd_extendedamount"] = new Money(obj.ExtendedAmount);
                                     i = "1.9";
@@ -5767,6 +5905,31 @@ namespace DMSService
                 return "CRM " + ex.Message + i;
             }
             // return "success";i
+        }
+        internal static string insertInvoiceSubOrderJson(InvoiceSuborder obj, string org)
+        {
+            try
+            {
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (obj != null)
+                {
+
+                    Entity entity = new Entity("bsd_systemlogservice");
+                    //throw new Exception(obj.TransferOrderProduct.Count.ToString());
+                    var json = new JavaScriptSerializer().Serialize(obj);
+                    // bsd_object
+                    entity["bsd_method"] = "create";
+                    entity["bsd_name"] = "bsd_invoiceax";
+                    entity["bsd_object"] = json.ToString();
+                    crm.Service.Create(entity);
+                }
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+            return "success";
         }
         //vinhlh 02-11-2017
         internal static string insertTransferOrder(TransferOrder obj, string org)
@@ -5971,7 +6134,7 @@ namespace DMSService
                             entity["bsd_codeax"] = obj.RecId;
                             // if (!string.IsNullOrEmpty(obj.bsd_deliveryfee.ToString()))
 
-
+                            entity["bsd_type"] = new OptionSetValue(861450000);
                             entity["bsd_description"] = obj.bsd_description;
                             #region Lookup Entity
                             #region Tosite and ToWareHouse
@@ -6103,7 +6266,7 @@ namespace DMSService
                             catch (Exception ex)
                             {
                                 crm.Service.Delete("bsd_transferorder", bsd_trasferorderid);
-                                return "Transfer order product error 123:" + ex.Message + " trace: " + trace + " product: " + product;
+                                return "Transfer order product error:" + ex.Message + " trace: " + trace + " product: " + product;
                             }
 
                             #endregion

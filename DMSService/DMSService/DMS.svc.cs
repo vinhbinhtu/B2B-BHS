@@ -178,7 +178,7 @@ namespace DMSService
         }
         public string insertInvoiceSubOrder(InvoiceSuborder obj, string org)
         {
-            return CrmProvider.insertInvoiceSubOrder(obj, org);
+            return CrmProvider.insertInvoiceSubOrderJson(obj, org);
         }
         public string insertWarehouse(Warehouse objwarehouse, string org)
         {
@@ -373,11 +373,15 @@ namespace DMSService
         {
             return CrmProvider.CancelPickingList(pickingListID, org);
         }
-        public string insertPurchaseOrder(TransferOrder obj, string org)
+        public TransferOrder insertPurchaseOrder(TransferOrder obj, string org)
         {
             return CrmProvider.insertPurchaseOrder(obj, org);
         }
-        public string CorrectPurchaseOrder(TransferOrder obj, string org)
+        public string UpdatePorterPurchaseOrder(string PO, string ProductReceipt, string ProductId, decimal Amount, string org)
+        {
+            return CrmProvider.UpdatePorterPurchaseOrder(PO, ProductReceipt, ProductId, Amount, org);
+        }
+        public TransferOrder CorrectPurchaseOrder(TransferOrder obj, string org)
         {
             return CrmProvider.CorrectPurchaseOrder(obj, org);
         }

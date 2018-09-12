@@ -30,7 +30,7 @@ namespace DeliveryPlugin
 
             if (myService.context.Depth > 1) return;
             myService.StartService();
-         
+
             #region bsd_Action_CreateSubOrder
             if (myService.context.MessageName == "bsd_Action_CreateSubOrder")
             {
@@ -42,7 +42,7 @@ namespace DeliveryPlugin
                     Entity order = myService.service.Retrieve(target.LogicalName, target.Id, new ColumnSet(true));
 
                     int order_type = ((OptionSetValue)order["bsd_type"]).Value;
-                    
+
                     #region Chặn xuất khẩu
                     //if (order_type == 100000000 || order_type == 100000001)
                     //{
@@ -328,7 +328,7 @@ namespace DeliveryPlugin
                             log = "create suborder product 2";
                             if (multiple_address)
                             {
-                               
+
                                 condition = condition
                                 && (orderproduct_cus.DeliveryFrom == ((OptionSetValue)orderproduct["bsd_deliveryfrom"]).Value
                                 && orderproduct_cus.ShippingFromAddress == ((EntityReference)orderproduct["bsd_shippingfromaddress"]).Id
@@ -1798,7 +1798,7 @@ namespace DeliveryPlugin
             #region Update
             else if (myService.context.MessageName == "Update")
             {
-               
+
                 Entity target = myService.getTarget();
                 if (target.HasValue("bsd_skipplugin") && (bool)target["bsd_skipplugin"]) return;
 
@@ -1864,8 +1864,6 @@ namespace DeliveryPlugin
             #region bsd_Action_CheckSiteQuantity
             else if (myService.context.MessageName == "bsd_Action_CheckSiteQuantity")
             {
-                
-               
 
                 //try { 
                 #region vinhlh 22-12-2017 check ton kho
@@ -1893,6 +1891,9 @@ namespace DeliveryPlugin
                 //string _domain = "dynamics.LOCAL";
                 #endregion
                 myService.StartService();
+
+
+
                 EntityReference target = myService.getTargetEntityReference();
                 Entity suborder = myService.service.Retrieve(target.LogicalName, target.Id, new ColumnSet(true));
                 Entity account = myService.service.Retrieve("account", ((EntityReference)suborder["bsd_potentialcustomer"]).Id, new ColumnSet(true));
@@ -1906,6 +1907,7 @@ namespace DeliveryPlugin
                 </fetch>").Entities.FirstOrDefault();
                 bool connect_ax = getConfigdefaultconnectax();
                 List<ThongTinTonKho> list_thongtintonkho = new List<ThongTinTonKho>();
+                
                 if (connect_ax == false)
                 {
                     ThongTinTonKho thongtin = new ThongTinTonKho();
@@ -1913,7 +1915,7 @@ namespace DeliveryPlugin
                     list_thongtintonkho.Add(thongtin);
                     myService.context.OutputParameters["Result"] = -1;
                     var Serializedresult = Util.JSONSerialize(list_thongtintonkho);
-                   // throw new Exception(thongtin.ProductName);
+                    // throw new Exception(thongtin.ProductName);
                     throw new Exception(Serializedresult);
                 }
                 bool check_inventory = configdefault.HasValue("bsd_checkinventory") ? (bool)configdefault["bsd_checkinventory"] : true;
@@ -1922,7 +1924,7 @@ namespace DeliveryPlugin
                 //string lst_CheckProductAX = "";
                 //int i = 0;
                 var suborder_type = ((OptionSetValue)suborder["bsd_type"]).Value;
-                if (suborder_type != 861450003 && suborder_type != 861450004  && check_inventory && check_inventory_account) // Khác mật rỉ
+                if (suborder_type != 861450003 && check_inventory && check_inventory_account) // Khác mật rỉ
                 {
                     DateTime date = (DateTime)suborder["bsd_date"];
                     //if (((OptionSetValue)suborder["statuscode"]).Value == 861450000 || ((OptionSetValue)suborder["statuscode"]).Value == 861450001)
@@ -1948,6 +1950,7 @@ namespace DeliveryPlugin
                                    <entity name='bsd_suborderproduct'>
                                          <attribute name='bsd_suborderproductid' />
                                          <attribute name='bsd_totalquantity' />
+                                            <attribute name='bsd_shipquantity' />
                                          <attribute name='bsd_product' />
                                          <filter type='and'>
                                                <condition attribute='bsd_suborder' operator='eq' uitype='bsd_suborder' value='" + suborder.Id + @"' />  
@@ -1960,70 +1963,27 @@ namespace DeliveryPlugin
                         foreach (var suborderproduct in list_suborderproduct.Entities)
                         {
                             #region list Product
-                            decimal suborder_quantity = (decimal)suborderproduct["bsd_totalquantity"];
+                            decimal suborder_quantity = suborderproduct.HasValue("bsd_shipquantity") ? (decimal)suborderproduct["bsd_shipquantity"] : 0m;
                             //decimal warehouse_quantity = 0m;
                             EntityReference product_ref = (EntityReference)suborderproduct["bsd_product"];
                             Entity product = (myService.service.Retrieve(product_ref.LogicalName, product_ref.Id, new ColumnSet(true)));
                             lst_Product = product["productnumber"].ToString().Trim() + ":" + en_Site["bsd_code"].ToString().Trim() + ":" + "null" + ":" + suborder_quantity;
+                            if (suborder.HasValue("bsd_warehouse"))
+                            {
+                                EntityReference RFwarehouse = (EntityReference)suborder["bsd_warehouse"];
+                                Entity warehouse = myService.service.Retrieve("bsd_warehouseentity", RFwarehouse.Id, new ColumnSet("bsd_warehouseid"));
+                                string codewarehouse = warehouse["bsd_warehouseid"].ToString();
+                                lst_Product = product["productnumber"].ToString().Trim() + ":" + en_Site["bsd_code"].ToString().Trim() + ":" + codewarehouse + ":" + suborder_quantity;
+                            }
                             if (i == 0) lst_CheckProductAX = lst_Product;
                             else lst_CheckProductAX += ";" + lst_Product.Trim();
                             i++;
-                            #region vinhlh 23-10-2017
-                            /*
-
-                            EntityCollection list_warehouse = myService.FetchXml(@"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>',
-                              <entity name='bsd_warehouseentity'>
-                                      <attribute name='bsd_warehouseentityid' />
-                                      <filter type='and'>
-                                           <condition attribute='bsd_site' operator='eq' uitype='bsd_site' value='" + site.Id + @"' />
-                                      </filter>
-                                  </entity>
-                              </fetch>");
-                            foreach (var warehouse in list_warehouse.Entities)
-                            {
-                                EntityCollection list_warehouseproduct = myService.FetchXml(
-                                    @"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
-                                       <entity name='bsd_warehourseproduct'>
-                                           <attribute name='bsd_warehourseproductid' />
-                                           <attribute name='bsd_unitconvertion' />
-                                           <attribute name='bsd_date' />
-                                           <order attribute='modifiedon' descending='true' />
-                                           <filter type='and'>
-                                               <condition attribute='statecode' operator='eq' value='0' />
-                                               <condition attribute='bsd_product' operator='eq' uitype='product' value='" + product_ref.Id + @"' />
-                                               <condition attribute='bsd_warehouses' operator='eq' uitype='bsd_warehouseentity' value='" + warehouse.Id + @"' />
-                                           </filter>
-                                           </entity>
-                                    </fetch>");
-                                if (list_warehouseproduct.Entities.Any())
-                                {
-                                    Entity warehouse_product = list_warehouseproduct.Entities.First();
-                                    warehouse_quantity += (decimal)warehouse_product["bsd_unitconvertion"];
-                                }
-                            }
-
-                            decimal submit_quantity = this.Lay_So_Luong_San_Pham_Da_Su_dung(suborder.Id, site.Id, product_ref.Id); // số lượng đã có trong suborder submit
-                            decimal can_using_quantity = warehouse_quantity - submit_quantity; // số lượng khả dụng.
-                            if (suborder_quantity > can_using_quantity)
-                            {
-                                if (can_using_quantity < 0) can_using_quantity = 0; // nếu số lượng có thể sử dụng nhỏ hơn không thì cho bằng 0 luôn.
-
-                                ThongTinTonKho thongtin = new ThongTinTonKho();
-                                thongtin.ProductName = product["name"].ToString();
-                                thongtin.AvailableQuantity = can_using_quantity;
-                                thongtin.SuborderQuantity = suborder_quantity;
-                                list_thongtintonkho.Add(thongtin);
-                                myService.context.OutputParameters["Result"] = -1;
-                            }
-                             */
-                            #endregion
                             #endregion
                         }
                         #region Call service
                         try
                         {
                             s_Result = client.BHS_ValidateOnHand(contextService, lst_CheckProductAX);
-                            //throw new Exception(s_Result+";"+ lst_CheckProductAX);
                         }
                         catch (Exception ex)
                         {
@@ -2031,8 +1991,10 @@ namespace DeliveryPlugin
                             thongtin.ProductName = ex.Message;
                             list_thongtintonkho.Add(thongtin);
                             myService.context.OutputParameters["Result"] = -1;
+
                             if (list_thongtintonkho.Any())
                             {
+
                                 var Serializedresult = Util.JSONSerialize(list_thongtintonkho);
                                 throw new Exception(Serializedresult);
                             }
@@ -2060,7 +2022,6 @@ namespace DeliveryPlugin
                                 myService.context.OutputParameters["Result"] = -1;
                             }
                         }
-
                         #endregion
                         #endregion
                     }
@@ -2069,11 +2030,6 @@ namespace DeliveryPlugin
                 {
                     myService.context.OutputParameters["Result"] = 1;
                 }
-                //ThongTinTonKho thongtin = new ThongTinTonKho();
-                //thongtin.ProductName = "123";
-                //thongtin.AvailableQuantity = 200;
-                //thongtin.SuborderQuantity = 10;
-                //list_thongtintonkho.Add(thongtin);
                 if (list_thongtintonkho.Any())
                 {
                     myService.context.OutputParameters["Result"] = -1;
@@ -2150,7 +2106,7 @@ namespace DeliveryPlugin
                             <condition attribute='statecode' operator='eq' value='0' />
                             <condition attribute='statuscode' operator='in'>
                                   <value>861450002</value>
-                            </condition>
+                            </condition>x`  
                             <condition attribute='bsd_site' operator='eq' uitype='bsd_site' value='" + siteid + @"' />
                             <condition attribute='bsd_suborderid' operator='ne' uitype='bsd_suborder' value='" + suborderid + @"' />
                       </filter>
@@ -2388,10 +2344,8 @@ namespace DeliveryPlugin
                     Entity suborder = myService.service.Retrieve(((EntityReference)item["bsd_suborder"]).LogicalName, ((EntityReference)item["bsd_suborder"]).Id, new ColumnSet(true));
                     if (item.HasValue("bsd_shipquantity"))
                     {
-                        if (suborder.HasValue("bsd_tennhanvienduyet"))
-                            result += (decimal)item["bsd_shipquantity"];
-                        else if (((OptionSetValue)suborder["statuscode"]).Value != 861450006)
-                            result += (decimal)item["bsd_shipquantity"];
+                        if (suborder.HasValue("bsd_tennhanvienduyet")) result += (decimal)item["bsd_shipquantity"];
+                        else if (((OptionSetValue)suborder["statuscode"]).Value != 861450006) result += (decimal)item["bsd_shipquantity"];
                     }
                 }
             }
@@ -2427,7 +2381,7 @@ namespace DeliveryPlugin
             {
                 return false;
             }
-            
+
         }
     }
 }

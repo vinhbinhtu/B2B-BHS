@@ -38,7 +38,7 @@ namespace Plugin_ReturnOrder
                 }
                 catch (Exception ex)
                 {
-                    throw new Exception(ex.Message);
+                    throw new Exception(ex.Message + test);
                 }
             }
 
@@ -202,6 +202,7 @@ namespace Plugin_ReturnOrder
                         EntityCollection list_deliverynote;
                         EntityReference deliveryNote = (EntityReference)target["bsd_deliverynote"];
                         list_deliverynote = getDeliveryNote(suborderid, product.Id, deliveryNote.Id);
+                       
                         #region lst Delivery Note
                         if (list_deliverynote.Entities.Count > 0)
                         {
@@ -231,6 +232,7 @@ namespace Plugin_ReturnOrder
                             }
                             #endregion
                         }
+                       
                         if (requantity > 0)
                         {
                             #region
@@ -250,17 +252,20 @@ namespace Plugin_ReturnOrder
                                 new_returnorderproduct["bsd_productid"] = suborderproduct["bsd_productid"];
                             }
                             else if (suborderproduct.HasValue("bsd_product")) new_returnorderproduct["bsd_product"] = suborderproduct["bsd_product"];
+                          
                             if (suborderproduct.HasValue("bsd_unit")) new_returnorderproduct["bsd_unit"] = suborderproduct["bsd_unit"];
                             if (suborderproduct.HasValue("bsd_product")) new_returnorderproduct["bsd_product"] = suborderproduct["bsd_product"];
                             if (suborderproduct.HasValue("transactioncurrencyid")) new_returnorderproduct["transactioncurrencyid"] = suborderproduct["transactioncurrencyid"];
                             if (suborderproduct.HasValue("exchangerate")) new_returnorderproduct["exchangerate"] = suborderproduct["exchangerate"];
                             if (suborderproduct.HasValue("bsd_itemsalestax")) new_returnorderproduct["bsd_itemsalestax"] = suborderproduct["bsd_itemsalestax"];
                             if (suborderproduct.HasValue("bsd_usingtax")) new_returnorderproduct["bsd_usingtax"] = suborderproduct["bsd_usingtax"];
+                           
                             if (suborderproduct.HasValue("bsd_currencyexchange"))
                             {
                                 decimal currencyexchange = (-1) * (decimal)suborderproduct["bsd_currencyexchange"];
                                 new_returnorderproduct["bsd_currencyexchange"] = new Money(currencyexchange);
                             }
+                          
                             //throw new Exception("4");
                             if (suborderproduct.HasValue("bsd_vatprice"))
                             {
@@ -270,19 +275,21 @@ namespace Plugin_ReturnOrder
                                 decimal tax = vat2 * quantity;
                                 new_returnorderproduct["bsd_tax"] = new Money(tax);
                             }
+                           
                             if (suborderproduct.HasValue("bsd_giatruocthue"))
                             {
                                 decimal giatruocthue = ((Money)suborderproduct["bsd_giatruocthue"]).Value;
                                 new_returnorderproduct["bsd_giatruocthue"] = suborderproduct["bsd_giatruocthue"];
                                 decimal amount = giatruocthue * quantity;
                                 new_returnorderproduct["bsd_amount"] = new Money(amount);
-
+                                if (!suborderproduct.HasValue("bsd_itemsalestax")) throw new Exception(suborderproduct["bsd_productid"]+" Item Sales Tax is null value");
                                 vat2 = (((Money)suborderproduct["bsd_giatruocthue"]).Value / 100) * (decimal)suborderproduct["bsd_itemsalestax"];
                                 giasauthue = ((Money)suborderproduct["bsd_giatruocthue"]).Value + vat2;
                                 new_returnorderproduct["bsd_giasauthue"] = new Money(giasauthue);
                                 decimal extendedamount = giasauthue * quantity;
                                 new_returnorderproduct["bsd_extendedamount"] = new Money(extendedamount);
                             }
+
                             if (suborderproduct.HasValue("bsd_itemsalestaxgroup")) new_returnorderproduct["bsd_itemsalestaxgroup"] = suborderproduct["bsd_itemsalestaxgroup"];
                             if (suborderproduct.HasValue("bsd_priceperunit")) new_returnorderproduct["bsd_priceperunit"] = suborderproduct["bsd_priceperunit"];      // gán priceperunit vào để đẩy qua khi tạo suborder TH bán
                             if (suborderproduct.HasValue("bsd_shippingprice")) new_returnorderproduct["bsd_shippingprice"] = suborderproduct["bsd_shippingprice"];
@@ -297,7 +304,7 @@ namespace Plugin_ReturnOrder
                             #endregion
                         }
                         else i_flat_am++;
-
+                  
                         #endregion
                     }
                     if (i_lstproduct == i_flat || i_lstproduct == i_flat_am)

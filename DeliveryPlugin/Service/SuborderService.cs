@@ -108,7 +108,8 @@ namespace DeliveryPlugin.Service
                         item_sales_tax = (decimal)ent_itemsalestaxgroup["bsd_percentageamount"];
                         vat_percentageamount = (decimal)ent_itemsalestaxgroup["bsd_percentageamount"];
                         check_using_tax = true;
-                    }else
+                    }
+                    else
                     {
                         #region Lấy sales Tax Group
                         if (product.HasValue("bsd_itemsalestaxgroup"))
@@ -151,7 +152,7 @@ namespace DeliveryPlugin.Service
                     newTarget["bsd_itemsalestaxgroup"] = null;
                 }
             }
-            
+
             //if (suborder.HasValue("bsd_saletaxgroup"))
             //{
             //    Entity sale_tax_group = myService.service.Retrieve("bsd_saletaxgroup", ((EntityReference)suborder["bsd_saletaxgroup"]).Id, new ColumnSet("bsd_type"));
@@ -558,9 +559,21 @@ namespace DeliveryPlugin.Service
             #endregion
 
             decimal giatruocthue = price_per_unit + price_shipping_per_unit + porter_price;
+            //throw new Exception("giatruocthue"+ price_per_unit);
             decimal vat = (giatruocthue / 100) * vat_percentageamount;
             decimal tax = vat * product_quantity;
             decimal giasauthue = giatruocthue + vat;
+            if (suborder.HasValue("bsd_typeorder"))
+            {
+               // throw new Exception("okie"+ ((OptionSetValue)suborder["bsd_typeorder"]).Value);
+                if (((OptionSetValue)suborder["bsd_typeorder"]).Value == 100000000)
+                {
+                    giasauthue = giatruocthue;
+                    giatruocthue = (giasauthue * 100) /( vat_percentageamount+100);
+                    vat = (giatruocthue / 100) * vat_percentageamount;
+                    tax = vat * product_quantity;
+                }
+            }
             decimal amount = giatruocthue * product_quantity;
             decimal extendedamount = giasauthue * product_quantity;
             decimal bsd_exchangeratevalue = (decimal)suborder["bsd_exchangeratevalue"];

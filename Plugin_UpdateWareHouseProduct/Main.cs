@@ -106,8 +106,8 @@ namespace Plugin_UpdateWareHouseProduct
                                     s_Result = client.BHS_ValidateOnHand_RequestDelivery(contextService, lst_Product);
                                 }
                                 catch (Exception ex) { throw new Exception("Service:" + ex.Message + " lst_Product:" + lst_Product); }
-                                //if (warehouse["bsd_warehouseid"].ToString().Trim() == "KD10") throw new Exception("okie:"+ s_Result);
-                               // throw new Exception(s_Result);
+                                //if (warehouse["bsd_warehouseid"].ToString().Trim() == "KD01") throw new Exception("okie:"+ s_Result);
+                                //throw new Exception(s_Result);
                                 string[] lstProduct_Result = new string[] { };
                                 string[] lstitem = new string[] { };
                                 lstProduct_Result = s_Result.Split(';');
@@ -137,7 +137,7 @@ namespace Plugin_UpdateWareHouseProduct
                                            // if (warehouse["bsd_warehouseid"].ToString().Trim() == "KD10") throw new Exception(QuantityRequestDeliveryProduct+"okie:" + s_Result);
                                             Entity wareHouse_Product_Update = new Entity(en.LogicalName, en.Id);
                                             wareHouse_Product_Update["bsd_date"] = DateTime.Now;
-                                            //if (warehouse["bsd_warehouseid"].ToString().Trim() == "KD10") throw new Exception(QuantityRequestDeliveryProduct + "okie1:" + s_Result);
+                                            //if (warehouse["bsd_warehouseid"].ToString().Trim() == "KD01") throw new Exception(QuantityRequestDeliveryProduct + "okie1:" + s_Result);
                                             if (Quantity < 0 && Quantity != 0)
                                             {
 
@@ -158,11 +158,11 @@ namespace Plugin_UpdateWareHouseProduct
 
 
                                                 wareHouse_Product_Update["bsd_quantity"] = Quantity - QuantityRequestDeliveryProduct;
-                                                wareHouse_Product_Update["bsd_description"] = "AX Check WareHouse3";
+                                                
 
 
                                             }
-                                           
+                                            wareHouse_Product_Update["bsd_description"] = "AX Check WareHouse quantity AX: "+ Quantity;
                                             service.Update(wareHouse_Product_Update);
                                         }
 
@@ -191,7 +191,7 @@ namespace Plugin_UpdateWareHouseProduct
                                         Entity en_product = getProduct(lstitem[0].ToString().Trim());
                                         wareHouse_Product_Create["bsd_product"] = new EntityReference(en_product.LogicalName, en_product.Id);
                                         wareHouse_Product_Create["bsd_unit"] = (EntityReference)en_product["defaultuomid"];
-                                        wareHouse_Product_Create["bsd_description"] = "AX Check WareHouse";
+                                        wareHouse_Product_Create["bsd_description"] = "AX Check WareHouse quantity AX: "+ Quantity;
                                         if (Quantity>0)
                                         {
                                             wareHouse_Product_Create["bsd_description"] = "AX Check WareHouse1";

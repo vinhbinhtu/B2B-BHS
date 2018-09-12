@@ -222,10 +222,13 @@ namespace DMSService
         bool DeleteImportDeclaration(string Recid, string org);
         [OperationContract]
         [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-        string insertPurchaseOrder(TransferOrder obj, string org);
+        TransferOrder insertPurchaseOrder(TransferOrder obj, string org);
         [OperationContract]
         [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-        string CorrectPurchaseOrder(TransferOrder obj, string org);
+        string UpdatePorterPurchaseOrder(string PO, string ProductReceipt, string ProductId, decimal Amount, string org);
+        [OperationContract]
+        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        TransferOrder CorrectPurchaseOrder(TransferOrder obj, string org);
         [OperationContract]
         [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         bool CancelPurchaseOrder(string purchaseOrderId, string org);

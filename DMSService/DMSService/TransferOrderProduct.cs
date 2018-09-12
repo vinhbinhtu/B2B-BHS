@@ -8,6 +8,8 @@ namespace DMSService
         [DataMember]
         public string productnumber { get; set; }
         [DataMember]
+        public string productname { get; set; }
+        [DataMember]
         public string bsd_unit { get; set; }
         [DataMember]
         public decimal bsd_quantity { get; set; }
@@ -23,7 +25,15 @@ namespace DMSService
         public string bsd_licenseplate { get; set; }
         [DataMember]
         public string bsd_driver { get; set; }
+
         [DataMember]
         public bool bsd_porter { get; set; }
+        [DataMember]
+        public decimal bsd_totalpriceshipping { get; set; }
+        [DataMember]
+        public decimal bsd_totalpriceporter { get; set; }
+     
+        [DataMember]
+        public decimal bsd_truckload { get; set; }
     }
 }
