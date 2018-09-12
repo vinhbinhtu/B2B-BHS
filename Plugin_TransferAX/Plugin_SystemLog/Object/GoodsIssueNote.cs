@@ -213,6 +213,10 @@ namespace Plugin_SystemLog.Object
                     }
                     deliverynote["bsd_type"] = new OptionSetValue(request_deliverytype);
                     deliverynote["bsd_date"] = request_delivery["bsd_date"];
+                    if (objissuenote.RequestShipDate != null)
+                    {
+                        deliverynote["bsd_date"] = objissuenote.RequestShipDate;
+                    }
                     if (request_delivery.HasValue("bsd_deliverytrucktype")) deliverynote["bsd_deliverytrucktype"] = request_delivery["bsd_deliverytrucktype"];
                     if (request_delivery.HasValue("bsd_deliverytruck")) deliverynote["bsd_deliverytruck"] = request_delivery["bsd_deliverytruck"];
                     if (request_delivery.HasValue("bsd_carrierpartner")) deliverynote["bsd_carrierpartner"] = request_delivery["bsd_carrierpartner"];
@@ -420,7 +424,6 @@ namespace Plugin_SystemLog.Object
                                                 }
                                                 else
                                                 {
-
                                                     "You must provide a value for Price Unit (Shipping Price List)".Throw();
                                                 }
                                             }

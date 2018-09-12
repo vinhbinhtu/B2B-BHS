@@ -72,10 +72,18 @@ namespace Plugin_SystemLog
                             GoodsIssueNote.Create(obj, service);
                         }
                     }
+                    else if (entityName.ToLower() == "bsd_invoiceax")
+                    {
+                        if (method.ToLower() == "create")
+                        {
+                            InvoiceSuborder obj = InvoiceSuborder.JsonParse(target["bsd_object"].ToString());
+                            InvoiceSuborder.Create(obj, service);
+                        }
+                    }
                 }
                 catch (Exception ex)
                 {
-                    throw new Exception("System Log: " + ex.Message);
+                    throw new Exception( ex.Message);
                 }
             }
         }

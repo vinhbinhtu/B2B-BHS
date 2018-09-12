@@ -78,6 +78,7 @@ namespace Plugin_TransferAX
                         Random rnd = new Random();
                         string bsd_customerpo = "CRMAX";
                         string bsd_site = "BHS";
+                        string bsd_warehouse = null;
                         string bsd_saletaxgroup = "";
                         string bsd_itemsalestaxgroup = "NON-VAT";
                         string bsd_importdeclaration = "";
@@ -257,7 +258,7 @@ namespace Plugin_TransferAX
 
                         }
                         //bsd_paymentmethod
-                        Guid CurrencyID=Guid.Empty;
+                        Guid CurrencyID = Guid.Empty;
                         if (suborder.HasValue("transactioncurrencyid"))
                         {
                             EntityReference rf_Entity = (EntityReference)suborder["transactioncurrencyid"];
@@ -297,6 +298,15 @@ namespace Plugin_TransferAX
                             Entity Entity = service.Retrieve(rf_Entity.LogicalName, rf_Entity.Id, new ColumnSet("bsd_code"));
                             if (Entity.HasValue("bsd_code"))
                                 bsd_site = Entity["bsd_code"].ToString();
+
+                        }
+                        if (suborder.HasValue("bsd_warehouse"))
+                        {
+                            //bsd_shiptoaccount = suborder["bsd_shiptoaccount"].ToString();
+                            EntityReference rf_Entity = (EntityReference)suborder["bsd_warehouse"];
+                            Entity Entity = service.Retrieve(rf_Entity.LogicalName, rf_Entity.Id, new ColumnSet("bsd_warehouseid"));
+                            if (Entity.HasValue("bsd_warehouseid"))
+                                bsd_warehouse = Entity["bsd_warehouseid"].ToString();
 
                         }
                         if (suborder.HasValue("bsd_shiptoaddress"))
@@ -353,21 +363,27 @@ namespace Plugin_TransferAX
                         }
                         else if (!suborder.HasValue("bsd_order"))
                         {
-
+                            string contractNumber = "0000";
+                            if (suborder.HasValue("bsd_contractnumber"))
+                            {
+                                contractNumber = suborder["bsd_contractnumber"].ToString().Trim();
+                            }
                             FinancialDimensionServices.DimensionValueContract contract = new FinancialDimensionServices.DimensionValueContract();
                             contract.parmDimensionAttribute = DimensionAtt;
-                            contract.parmValue = "0000";
-                            contract.parmDescription = "0000";
-
-                            contract.parmActiveFrom = DateTime.Parse(DateTime.Now.ToString());
+                            contract.parmValue = contractNumber;
+                            contract.parmDescription = contractNumber;
+                            DateTime bsd_contractdate = DateTime.Now;
+                            if (suborder.HasValue("bsd_contractdate")) bsd_contractdate = (DateTime)suborder["bsd_contractdate"];
+                            contract.parmActiveFrom = bsd_contractdate.AddHours(7);
+                            //contract.parmActiveFrom = bsd_contractdate;// DateTime.Parse(DateTime.Now.ToString());
                             contract.parmActiveTo = new DateTime(1900, 1, 1);
                             // contract.parmActiveTo = DateTime.Now.AddDays(3);
                             //
                             proxyDimension.createDimensionValue(contextDimension, contract);
 
                             dimAttValue.Name = DimensionAtt;
-                            dimAttValue.Value = "0000";
-                            bsd_economiccontractno = "0000";
+                            dimAttValue.Value = contractNumber;
+                            bsd_economiccontractno = contractNumber;
                             lstDemesion.SetValue(dimAttValue, 1);
                             //dimAttValueSet.Values = new AxdType_DimensionAttributeValue[2] { dimAttValue , dimAttValueCustomer };
                             //dimAttValueReturnOrder.Name = DimensionAtt;
@@ -477,7 +493,9 @@ namespace Plugin_TransferAX
                                             #endregion
 
                                         }
-                                        string s_Result = client.BHS_CreateReturnSalesOrder(context, bsd_customercode, bsd_returnreasoncode, "", RMA_Number, bsd_date.AddHours(7), entity["bsd_suborderax"].ToString(), bsd_addressinvoiceaccount_Guid, bsd_invoicenameaccount, lst_SalesLine, bsd_totalamount * bsd_exchangeratevalue, bsd_exchangeratevalue);
+                                        //throw new Exception(entity["bsd_suborderax"].ToString());
+                                        // throw new Exception("bsd_customercode:"+bsd_customercode+ "bsd_returnreasoncode: " +bsd_returnreasoncode+ "emplId: "+ " RMA_Number:" +RMA_Number+ "date: "+ bsd_date.AddHours(7)+ " Sales Id:"+ entity["bsd_suborderax"].ToString()+ " bsd_addressinvoiceaccount_Guid: " +bsd_addressinvoiceaccount_Guid+ "bsd_invoicenameaccount: " + bsd_invoicenameaccount+ " lst_SalesLine:" +lst_SalesLine+ " total:"+ (bsd_totalamount * bsd_exchangeratevalue).ToString()+" exchange rate:" + bsd_exchangeratevalue.ToString());
+                                        string s_Result = client.BHS_CreateReturnSalesOrder(context, bsd_customercode, bsd_returnreasoncode, bsd_name, RMA_Number, bsd_date.AddHours(7), entity["bsd_suborderax"].ToString(), bsd_addressinvoiceaccount_Guid, bsd_invoicenameaccount, lst_SalesLine, bsd_totalamount * bsd_exchangeratevalue, bsd_exchangeratevalue);
                                         if (!s_Result.Contains("true")) throw new Exception("Create return order Exception-" + s_Result);
                                         SalesId_Return = s_Result.Replace("true", "");
                                         #endregion
@@ -511,7 +529,7 @@ namespace Plugin_TransferAX
                                         if (Entityreturnreasoncode.HasValue("bsd_code"))
                                             bsd_returnreasoncode = Entityreturnreasoncode["bsd_code"].ToString();
                                     }
-                                   
+
 
                                     //returnOrder = setSalesTableReturnOrder(bsd_currencydefault, bsd_customercode, bsd_invoiceaccount, bsd_invoicenameaccount, bsd_paymentterm, bsd_paymentmethod, bsd_shiptoaccountname, bsd_returnreasoncode, bsd_date, bsd_site, RMA_Number);
 
@@ -564,8 +582,8 @@ namespace Plugin_TransferAX
                                         #endregion
 
                                     }
-                                    string bsd_suborderax = getSubOrderHistoryExample(bsd_potentialcustomerid,CurrencyID);
-                                    string s_Result = client.BHS_CreateReturnSalesOrder(context, bsd_customercode, bsd_returnreasoncode, "", RMA_Number, bsd_date.AddHours(7), bsd_suborderax, bsd_addressinvoiceaccount_Guid, bsd_invoicenameaccount, lst_SalesLine, bsd_totalamount * bsd_exchangeratevalue, bsd_exchangeratevalue);
+                                    string bsd_suborderax = getSubOrderHistoryExample(bsd_potentialcustomerid, CurrencyID);
+                                    string s_Result = client.BHS_CreateReturnSalesOrder(context, bsd_customercode, bsd_returnreasoncode, bsd_name, RMA_Number, bsd_date.AddHours(7), bsd_suborderax, bsd_addressinvoiceaccount_Guid, bsd_invoicenameaccount, lst_SalesLine, bsd_totalamount * bsd_exchangeratevalue, bsd_exchangeratevalue);
                                     if (!s_Result.Contains("true")) throw new Exception("Create return order no resource Exception-" + s_Result);
                                     SalesId_Return = s_Result.Replace("true", "");
                                     #endregion
@@ -615,6 +633,7 @@ namespace Plugin_TransferAX
                                     decimal bsd_amount = 0m;
                                     decimal bsd_discount = 0m;
                                     decimal bsd_discountpercent = 0m;
+
                                     Entity b2c_SubOrderProduct = service.Retrieve(SubOrderProduct.LogicalName, SubOrderProduct.Id, new ColumnSet(true));
                                     //if (b2c_SubOrderProduct.HasValue("bsd_product"))
                                     //{
@@ -656,16 +675,28 @@ namespace Plugin_TransferAX
                                         if (Entity.HasValue("name"))
                                             bsd_unit = Entity["name"].ToString();
                                     }
+
                                     if (b2c_SubOrderProduct.HasValue("bsd_giatruocthue"))
                                         bsd_giatruocthue = ((Money)b2c_SubOrderProduct["bsd_giatruocthue"]).Value;
                                     if (b2c_SubOrderProduct.HasValue("bsd_amount"))
                                         bsd_amount = ((Money)b2c_SubOrderProduct["bsd_amount"]).Value;
-
+                                    // vinhlh 06-09-2018 đối với type Brand Shop tính lại giá trước thuế 5 số lẻ
+                                    if (((OptionSetValue)suborder["bsd_typeorder"]).Value == 100000000)
+                                    {
+                                        decimal bsd_giasauthue = ((Money)b2c_SubOrderProduct["bsd_giasauthue"]).Value;
+                                        decimal bsd_itemsalestax = (decimal)b2c_SubOrderProduct["bsd_itemsalestax"];
+                                        bsd_giatruocthue = (bsd_giasauthue * 100) / (bsd_itemsalestax + 100);
+                                        //bsd_amount = bsd_giatruocthue * bsd_shipquantity;
+                                    }
+                                    //throw new Exception("bsd_giatruocthue:" + bsd_giatruocthue);
+                                 
+                                 
+                                    //throw new Exception("bsd_amount"+bsd_amount);
                                     string result = client.checkSalesTable(context, bsd_name, bsd_invoiceaccount, bsd_customercode, bsd_shiptoaccount, bsd_paymentterm, bsd_paymentmethod, bsd_currencydefault, bsd_productid, bsd_site, "", bsd_customerpo, bsd_saletaxgroup, bsd_itemsalestaxgroup, "");
                                     if (result != "0") throw new Exception(result);
 
                                     AxdEntity_SalesLine salesLine = new AxdEntity_SalesLine();
-                                    salesLine = setSalesLineSalesOrder(bsd_productid, bsd_shipquantity, bsd_unit, bsd_giatruocthue, bsd_amount, bsd_saletaxgroup, bsd_itemsalestaxgroup, bsd_site);
+                                    salesLine = setSalesLineSalesOrder(bsd_productid, bsd_shipquantity, bsd_unit, bsd_giatruocthue, bsd_amount, bsd_saletaxgroup, bsd_itemsalestaxgroup, bsd_site, bsd_warehouse);
                                     Product product = new Product(bsd_productid, bsd_giatruocthue, bsd_amount);
                                     lstProduct.Add(product);
                                     lstLine[i] = salesLine;
@@ -678,11 +709,11 @@ namespace Plugin_TransferAX
                             #endregion
                             #region Create SalesOrder AX
                             salesOrder.SalesTable = new AxdEntity_SalesTable[1] { salesTable };
-                            // Call the create method on the service passing in the document.
+                            //Call the create method on the service passing in the document.
                             trace = "1";
                             EntityKey[] returnedSalesOrderEntityKey = proxy.create(contextSaleOrder, salesOrder);
                             trace = "2";
-                            // The create method returns an EntityKey which contains the ID of the sales order.
+                            //The create method returns an EntityKey which contains the ID of the sales order.
 
                             EntityKey returnedSalesOrder = (EntityKey)returnedSalesOrderEntityKey.GetValue(0);
 
@@ -712,7 +743,6 @@ namespace Plugin_TransferAX
                     catch (Exception ex)
                     {
                         throw new Exception(ex.Message);
-                        // Console.WriteLine("ex :" + ex.Message);
                     }
 
                     //end Connector AX
@@ -1017,7 +1047,7 @@ namespace Plugin_TransferAX
                                             <filter type='and'>
                                               <condition attribute='bsd_potentialcustomer' operator='eq'  uitype='account' value='" + customerAccountID + @"' />
                                               <condition attribute='bsd_suborderax' operator='not-null' />
-                                            <condition attribute='transactioncurrencyid' operator='eq'  uitype='transactioncurrency' value='"+CurrencyID+@"' />
+                                            <condition attribute='transactioncurrencyid' operator='eq'  uitype='transactioncurrency' value='" + CurrencyID + @"' />
                                               <condition attribute='bsd_type' operator='in'>
                                                 <value>861450000</value>
                                                 <value>861450002</value>
@@ -1127,7 +1157,7 @@ namespace Plugin_TransferAX
         //    return salesTable;
         //}
         #endregion
-        public AxdEntity_SalesLine setSalesLineSalesOrder(string bsd_productid, decimal bsd_shipquantity, string bsd_unit, decimal bsd_priceperunit, decimal bsd_amount, string bsd_saletaxgroup, string bsd_itemsalestaxgroup, string bsd_site)
+        public AxdEntity_SalesLine setSalesLineSalesOrder(string bsd_productid, decimal bsd_shipquantity, string bsd_unit, decimal bsd_priceperunit, decimal bsd_amount, string bsd_saletaxgroup, string bsd_itemsalestaxgroup, string bsd_site, string bsd_warehouse)
         {
             AxdEntity_SalesLine salesLine = new AxdEntity_SalesLine();
             salesLine.ItemId = bsd_productid;
@@ -1141,6 +1171,11 @@ namespace Plugin_TransferAX
             AxdEntity_InventDim inventDim = new AxdEntity_InventDim();
             inventDim.InventColorId = "01";
             inventDim.InventSiteId = bsd_site;
+            //throw new Exception(bsd_warehouse);
+            if (bsd_warehouse != null)
+            {
+                inventDim.InventLocationId = bsd_warehouse;
+            }
             salesLine.InventDim = new AxdEntity_InventDim[1] { inventDim };
             return salesLine;
         }
