@@ -37,5 +37,23 @@ namespace DMSService
         public string bsd_size { get; set; }
         [DataMember]
         public string bsd_style { get; set; }
+        [DataMember]
+        public string divisionname { get; set; }
+        [DataMember]
+        public string management { get; set; }
+        [DataMember]
+        public string company { get; set; }
+        [DataMember]
+        public string productsize2 { get; set; }
+        [DataMember]
+        public string productsize3 { get; set; }
+        [DataMember]
+        public string subcategory1 { get; set; }
+        [DataMember]
+        public string companybrand { get; set; }
+        [DataMember]
+        public string subbrandname { get; set; }
+        [DataMember]
+        public string grand { get; set; }
     }
 }

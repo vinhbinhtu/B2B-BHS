@@ -1226,6 +1226,1003 @@ namespace DMSService
                 throw;
             }
         }
+        #region Product vinhlh17-09-2018
+        internal static string insertCompany(objCompany obj, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (obj != null)
+                {
+                    if (string.IsNullOrEmpty(obj.Recid) || string.IsNullOrEmpty(obj.bsd_code)) return "code id is not null";
+                    // if (string.IsNullOrEmpty(objsaletaxcode.bsd_percentageamount.ToString())) return "Sales tax group percent tage amount is not null";
+                    string id = retriveLookup("bsd_manufactory", "bsd_codeax", obj.Recid, org);
+                    if (id != null)
+                    {
+                        Entity entity = new Entity("bsd_manufactory", Guid.Parse(id));
+                        entity["bsd_name"] = obj.bsd_name;
+                        entity["bsd_code"] = obj.bsd_code;
+                        crm.Service.Update(entity);
+                        return "success";
+                    }
+                    else
+                    {
+                        id = retriveLookup("bsd_manufactory", "bsd_code", obj.bsd_code, org);
+                        if (id != null)
+                        {
+                            Entity entity = new Entity("bsd_manufactory", Guid.Parse(id));
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Update(entity);
+                        }
+                        else
+                        {
+                            Entity entity = new Entity("bsd_manufactory");
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Create(entity);
+                        }
+                        return "success";
+                    }
+                }
+                return "success";
+            }
+            catch (Exception ex)
+            {
+                return "error " + ex.Message;
+                throw;
+            }
+        }
+        internal static bool DeleteCompany(string Recid, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (Recid != null)
+                {
+
+                    string id = retriveLookup("bsd_manufactory", "bsd_codeax", Recid, org);
+                    if (id != null)
+                    {
+
+                        crm.Service.Delete("bsd_manufactory", Guid.Parse(id));
+                    }
+
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw;
+            }
+        }
+        internal static string insertCompanyBrand(objCompanyBrand obj, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (obj != null)
+                {
+                    if (string.IsNullOrEmpty(obj.Recid) || string.IsNullOrEmpty(obj.bsd_code)) return "code id is not null";
+                    // if (string.IsNullOrEmpty(objsaletaxcode.bsd_percentageamount.ToString())) return "Sales tax group percent tage amount is not null";
+                    string id = retriveLookup("bsd_companybrand", "bsd_codeax", obj.Recid, org);
+                    if (id != null)
+                    {
+                        Entity entity = new Entity("bsd_companybrand", Guid.Parse(id));
+                        entity["bsd_name"] = obj.bsd_name;
+                        entity["bsd_code"] = obj.bsd_code;
+                        crm.Service.Update(entity);
+                        return "success";
+                    }
+                    else
+                    {
+                        id = retriveLookup("bsd_companybrand", "bsd_code", obj.bsd_code, org);
+                        if (id != null)
+                        {
+                            Entity entity = new Entity("bsd_companybrand", Guid.Parse(id));
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Update(entity);
+                        }
+                        else
+                        {
+                            Entity entity = new Entity("bsd_companybrand");
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Create(entity);
+                        }
+                        return "success";
+                    }
+                }
+                return "success";
+            }
+            catch (Exception ex)
+            {
+                return "error " + ex.Message;
+                throw;
+            }
+        }
+        internal static bool DeleteCompanyBrand(string Recid, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (Recid != null)
+                {
+                    string id = retriveLookup("bsd_companybrand", "bsd_codeax", Recid, org);
+                    if (id != null)
+                    {
+
+                        crm.Service.Delete("bsd_companybrand", Guid.Parse(id));
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw;
+            }
+        }
+        internal static string insertDivision(objDivision obj, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (obj != null)
+                {
+                    if (string.IsNullOrEmpty(obj.Recid) || string.IsNullOrEmpty(obj.bsd_code)) return "code id is not null";
+                    // if (string.IsNullOrEmpty(objsaletaxcode.bsd_percentageamount.ToString())) return "Sales tax group percent tage amount is not null";
+                    string id = retriveLookup("bsd_division", "bsd_codeax", obj.Recid, org);
+                    if (id != null)
+                    {
+                        Entity entity = new Entity("bsd_division", Guid.Parse(id));
+                        entity["bsd_name"] = obj.bsd_name;
+                        entity["bsd_code"] = obj.bsd_code;
+                        crm.Service.Update(entity);
+                        return "success";
+                    }
+                    else
+                    {
+                        id = retriveLookup("bsd_division", "bsd_code", obj.bsd_code, org);
+                        if (id != null)
+                        {
+                            Entity entity = new Entity("bsd_division", Guid.Parse(id));
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Update(entity);
+                        }
+                        else
+                        {
+                            Entity entity = new Entity("bsd_division");
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Create(entity);
+                        }
+                        return "success";
+                    }
+                }
+                return "success";
+            }
+            catch (Exception ex)
+            {
+                return "error " + ex.Message;
+                throw;
+            }
+        }
+        internal static bool DeleteDivision(string Recid, string org)
+        {
+            try
+            {
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (Recid != null)
+                {
+                    string id = retriveLookup("bsd_division", "bsd_codeax", Recid, org);
+                    if (id != null)
+                    {
+                        crm.Service.Delete("bsd_division", Guid.Parse(id));
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw;
+            }
+        }
+        internal static string insertManagement(objManagement obj, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (obj != null)
+                {
+                    if (string.IsNullOrEmpty(obj.Recid) || string.IsNullOrEmpty(obj.bsd_code)) return "code id is not null";
+                    // if (string.IsNullOrEmpty(objsaletaxcode.bsd_percentageamount.ToString())) return "Sales tax group percent tage amount is not null";
+                    string id = retriveLookup("bsd_management", "bsd_codeax", obj.Recid, org);
+                    if (id != null)
+                    {
+                        Entity entity = new Entity("bsd_management", Guid.Parse(id));
+                        entity["bsd_name"] = obj.bsd_name;
+                        entity["bsd_code"] = obj.bsd_code;
+                        crm.Service.Update(entity);
+                        return "success";
+                    }
+                    else
+                    {
+                        id = retriveLookup("bsd_management", "bsd_code", obj.bsd_code, org);
+                        if (id != null)
+                        {
+                            Entity entity = new Entity("bsd_management", Guid.Parse(id));
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Update(entity);
+                        }
+                        else
+                        {
+                            Entity entity = new Entity("bsd_management");
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Create(entity);
+                        }
+                        return "success";
+                    }
+                }
+                return "success";
+            }
+            catch (Exception ex)
+            {
+                return "error " + ex.Message;
+                throw;
+            }
+        }
+        internal static bool DeleteManagement(string Recid, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (Recid != null)
+                {
+                    string id = retriveLookup("Management", "bsd_codeax", Recid, org);
+                    if (id != null)
+                    {
+                        crm.Service.Delete("Management", Guid.Parse(id));
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw;
+            }
+        }
+        internal static string insertProductSize2(objProductSize2 obj, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (obj != null)
+                {
+                    if (string.IsNullOrEmpty(obj.Recid) || string.IsNullOrEmpty(obj.bsd_code)) return "code id is not null";
+                    string id = retriveLookup("bsd_size2", "bsd_codeax", obj.Recid, org);
+                    if (id != null)
+                    {
+                        Entity entity = new Entity("bsd_size2", Guid.Parse(id));
+                        entity["bsd_name"] = obj.bsd_name;
+                        entity["bsd_code"] = obj.bsd_code;
+                        crm.Service.Update(entity);
+                        return "success";
+                    }
+                    else
+                    {
+                        id = retriveLookup("bsd_size2", "bsd_code", obj.bsd_code, org);
+                        if (id != null)
+                        {
+                            Entity entity = new Entity("bsd_size2", Guid.Parse(id));
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Update(entity);
+                        }
+                        else
+                        {
+                            Entity entity = new Entity("bsd_size2");
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Create(entity);
+                        }
+                        return "success";
+                    }
+                }
+                return "success";
+            }
+            catch (Exception ex)
+            {
+                return "error " + ex.Message;
+                throw;
+            }
+        }
+        internal static bool DeleteProductSize2(string Recid, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (Recid != null)
+                {
+
+                    string id = retriveLookup("bsd_size2", "bsd_codeax", Recid, org);
+                    if (id != null)
+                    {
+                        crm.Service.Delete("bsd_size2", Guid.Parse(id));
+                    }
+
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw;
+            }
+        }
+        internal static string insertProductSize3(objProductSize3 obj, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (obj != null)
+                {
+                    if (string.IsNullOrEmpty(obj.Recid) || string.IsNullOrEmpty(obj.bsd_code)) return "code id is not null";
+                    string id = retriveLookup("bsd_size3", "bsd_codeax", obj.Recid, org);
+                    if (id != null)
+                    {
+                        Entity entity = new Entity("bsd_size3", Guid.Parse(id));
+                        entity["bsd_name"] = obj.bsd_name;
+                        entity["bsd_code"] = obj.bsd_code;
+                        crm.Service.Update(entity);
+                        return "success";
+                    }
+                    else
+                    {
+                        id = retriveLookup("bsd_size3", "bsd_code", obj.bsd_code, org);
+                        if (id != null)
+                        {
+                            Entity entity = new Entity("bsd_size3", Guid.Parse(id));
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Update(entity);
+                        }
+                        else
+                        {
+                            Entity entity = new Entity("bsd_size3");
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Create(entity);
+                        }
+                        return "success";
+                    }
+                }
+                return "success";
+            }
+            catch (Exception ex)
+            {
+                return "error " + ex.Message;
+                throw;
+            }
+        }
+        internal static bool DeleteProductSize3(string Recid, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (Recid != null)
+                {
+
+                    string id = retriveLookup("bsd_size3", "bsd_codeax", Recid, org);
+                    if (id != null)
+                    {
+                        crm.Service.Delete("bsd_size3", Guid.Parse(id));
+                    }
+
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw;
+            }
+        }
+        internal static string insertSubBrandName(objSubBrandName obj, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (obj != null)
+                {
+                    if (string.IsNullOrEmpty(obj.Recid) || string.IsNullOrEmpty(obj.bsd_code)) return "code id is not null";
+                    // if (string.IsNullOrEmpty(objsaletaxcode.bsd_percentageamount.ToString())) return "Sales tax group percent tage amount is not null";
+                    string id = retriveLookup("bsd_subbrandname", "bsd_codeax", obj.Recid, org);
+                    if (id != null)
+                    {
+                        Entity entity = new Entity("bsd_subbrandname", Guid.Parse(id));
+                        entity["bsd_name"] = obj.bsd_name;
+                        entity["bsd_code"] = obj.bsd_code;
+                        crm.Service.Update(entity);
+                        return "success";
+                    }
+                    else
+                    {
+                        id = retriveLookup("bsd_subbrandname", "bsd_code", obj.bsd_code, org);
+                        if (id != null)
+                        {
+                            Entity entity = new Entity("bsd_subbrandname", Guid.Parse(id));
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Update(entity);
+                        }
+                        else
+                        {
+                            Entity entity = new Entity("bsd_subbrandname");
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Create(entity);
+                        }
+                        return "success";
+                    }
+                }
+                return "success";
+            }
+            catch (Exception ex)
+            {
+                return "error " + ex.Message;
+                throw;
+            }
+        }
+        internal static bool DeleteSubBrandName(string Recid, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (Recid != null)
+                {
+                    string id = retriveLookup("bsd_subbrandname", "bsd_codeax", Recid, org);
+                    if (id != null)
+                    {
+                        crm.Service.Delete("bsd_subbrandname", Guid.Parse(id));
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw;
+            }
+        }
+        internal static string insertSubcategory1(objSubcategory1 obj, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (obj != null)
+                {
+                    if (string.IsNullOrEmpty(obj.Recid) || string.IsNullOrEmpty(obj.bsd_code)) return "code id is not null";
+                    // if (string.IsNullOrEmpty(objsaletaxcode.bsd_percentageamount.ToString())) return "Sales tax group percent tage amount is not null";
+                    string id = retriveLookup("bsd_subcategory1", "bsd_codeax", obj.Recid, org);
+                    if (id != null)
+                    {
+                        Entity entity = new Entity("bsd_subcategory1", Guid.Parse(id));
+                        entity["bsd_name"] = obj.bsd_name;
+                        entity["bsd_code"] = obj.bsd_code;
+                        crm.Service.Update(entity);
+                        return "success";
+                    }
+                    else
+                    {
+                        id = retriveLookup("bsd_subcategory1", "bsd_code", obj.bsd_code, org);
+                        if (id != null)
+                        {
+                            Entity entity = new Entity("bsd_subcategory1", Guid.Parse(id));
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Update(entity);
+                        }
+                        else
+                        {
+                            Entity entity = new Entity("bsd_subcategory1");
+                            entity["bsd_codeax"] = obj.Recid;
+                            entity["bsd_name"] = obj.bsd_name;
+                            entity["bsd_code"] = obj.bsd_code;
+                            crm.Service.Create(entity);
+                        }
+                        return "success";
+                    }
+                }
+                return "success";
+            }
+            catch (Exception ex)
+            {
+                return "error " + ex.Message;
+                throw;
+            }
+        }
+        internal static bool DeleteSubcategory1(string Recid, string org)
+        {
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (Recid != null)
+                {
+
+                    string id = retriveLookup("bsd_subcategory1", "bsd_codeax", Recid, org);
+                    if (id != null)
+                    {
+
+                        crm.Service.Delete("bsd_subcategory1", Guid.Parse(id));
+                    }
+
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw;
+            }
+        }
+        internal static string insertProduct(Product objproduct, string org)
+        {
+            var xml = "";
+            try
+            {
+                //org = "B2B";
+                var crm = new CRMConnector();
+                crm.speceficConnectToCrm(org);
+                if (objproduct != null)
+                {
+
+                    if (string.IsNullOrEmpty(objproduct.productnumber)) return "Product number is not null";
+                    // if (string.IsNullOrEmpty(objproduct.bsd_itemsalestaxgroup)) return "Sales tax code id is not null";
+                    //if (string.IsNullOrEmpty(objproduct.defaultuomscheduleid)) return "Default uom schedule id is not null";
+                    //if (string.IsNullOrEmpty(objproduct.defaultuomid)) return "Default uom id is not null";
+                    string id = retriveLookupProduct("product", "productnumber", objproduct.productnumber.Trim(), org);
+                    if (id != null)
+                    {
+                        #region Update
+
+                        Entity entity = new Entity("product", Guid.Parse(id));
+                        entity["name"] = objproduct.name;
+                        entity["description"] = objproduct.description;
+                        string bsd_itemsalestaxgroupid = retriveLookup("bsd_itemsalestaxgroup", "bsd_name", objproduct.bsd_itemsalestaxgroup, org);
+                        if (bsd_itemsalestaxgroupid != null)
+                        {
+                            entity["bsd_itemsalestaxgroup"] = new EntityReference("bsd_itemsalestaxgroup", Guid.Parse(bsd_itemsalestaxgroupid));
+                        }
+                        string uomscheduleid = retriveLookup("uomschedule", "name", objproduct.defaultuomscheduleid, org);
+                        if (uomscheduleid != null)
+                        {
+                            entity["defaultuomscheduleid"] = new EntityReference("uomschedule", Guid.Parse(uomscheduleid));
+                        }
+                        //else
+                        //{
+                        //    return "Group Unit not found";
+                        //}
+                        #region uom
+                        xml = @"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
+                                                     <entity name='uom'>
+                                                    <attribute name='uomid' />
+                                                    <attribute name='quantity' />
+                                                    <filter type='and'>
+                                                         <condition attribute='uomscheduleid' operator='eq' uitype='uomschedule' value='" + uomscheduleid + @"' />
+                                                            <condition attribute = 'name' operator= 'eq' uitype = 'uom' value = '" + objproduct.defaultuomid + @"' />
+                                                    </filter>
+                                                   </entity>
+                                                  </fetch>";
+
+                        var lst_uom = crm.Service.RetrieveMultiple(new FetchExpression(xml));
+                        if (lst_uom.Entities.Any())
+                        {
+                            // var bankdefault = (EntityReference)configdefault[0]["bsd_bankdefault"];
+                            Entity uom = lst_uom.Entities.First();
+                            entity["defaultuomid"] = new EntityReference(uom.LogicalName, uom.Id); ;
+                        }
+                        //else
+                        //{
+                        //    return "Unit not found";
+                        //}
+                        #endregion
+                        #region Customize
+                        string bsd_weight = retriveLookup("bsd_weightproduct", "bsd_code", objproduct.bsd_weight.Trim(), org);
+                        if (bsd_weight != null)
+                        {
+                            entity["bsd_weight"] = new EntityReference("bsd_weightproduct", Guid.Parse(bsd_weight));
+                        }
+                        //if (bsd_weight != null)
+                        //{
+                        //    Entity entity_weight = new Entity("bsd_weightproduct", Guid.Parse(bsd_weight));
+                        //    entity_weight["bsd_code"] = objproduct.bsd_weight;
+                        //    entity_weight["bsd_name"] = objproduct.bsd_weight;
+                        //    crm.Service.Update(entity_weight);
+                        //    entity["bsd_weight"] = new EntityReference("bsd_weightproduct", Guid.Parse(bsd_weight));
+                        //}
+                        //else
+                        //{
+                        //    Guid id_weight = Guid.NewGuid();
+                        //    Entity entity_weight = new Entity("bsd_weightproduct", id_weight);
+                        //    entity_weight["bsd_codeax"] = objproduct.productnumber.Trim();
+                        //    entity_weight["bsd_code"] = objproduct.bsd_weight;
+                        //    entity_weight["bsd_name"] = objproduct.bsd_weight;
+                        //    crm.Service.Create(entity_weight);
+                        //    entity["bsd_weight"] = new EntityReference("bsd_weightproduct", id_weight);
+                        //}
+                        string bsd_manufactory = retriveLookup("bsd_manufactory", "bsd_code", objproduct.bsd_manufactory, org);
+                        if (bsd_manufactory != null)
+                        {
+                            entity["bsd_manufactory"] = new EntityReference("bsd_manufactory", Guid.Parse(bsd_manufactory));
+                        }
+                        string bsd_size = retriveLookup("bsd_size", "bsd_code", objproduct.bsd_size, org);
+                        if (bsd_size != null)
+                        {
+                            entity["bsd_size"] = new EntityReference("bsd_size", Guid.Parse(bsd_size));
+                        }
+                        string bsd_style = retriveLookup("bsd_style", "bsd_code", objproduct.bsd_style, org);
+                        if (bsd_style != null)
+                        {
+                            entity["bsd_style"] = new EntityReference("bsd_style", Guid.Parse(bsd_style));
+                        }
+                        string bsd_brand = retriveLookup("bsd_brand", "bsd_code", objproduct.bsd_brand, org);
+                        if (bsd_brand != null)
+                        {
+                            entity["bsd_brand"] = new EntityReference("bsd_brand", Guid.Parse(bsd_brand));
+                        }
+                        string bsd_packing = retriveLookup("bsd_packing", "bsd_code", objproduct.bsd_packing, org);
+                        if (bsd_packing != null)
+                        {
+                            entity["bsd_packing"] = new EntityReference("bsd_packing", Guid.Parse(bsd_packing));
+                        }
+                        string bsd_packaging = retriveLookup("bsd_packaging", "bsd_code", objproduct.bsd_packaging, org);
+                        if (bsd_packaging != null)
+                        {
+                            entity["bsd_packaging"] = new EntityReference("bsd_packaging", Guid.Parse(bsd_packaging));
+                        }
+                        string bsd_configuration = retriveLookup("bsd_configuration", "bsd_code", objproduct.bsd_configuration, org);
+                        if (bsd_configuration != null)
+                        {
+                            entity["bsd_configuration"] = new EntityReference("bsd_configuration", Guid.Parse(bsd_configuration));
+                        }
+
+                        string bsd_divisionname = retriveLookup("bsd_division", "bsd_codeax", objproduct.divisionname, org);
+                        if (bsd_divisionname != null)
+                        {
+                            entity["bsd_divisionname"] = new EntityReference("bsd_division", Guid.Parse(bsd_divisionname));
+                        }
+                        string bsd_management = retriveLookup("bsd_management", "bsd_codeax", objproduct.management, org);
+                        if (bsd_management != null)
+                        {
+                            entity["bsd_management"] = new EntityReference("bsd_management", Guid.Parse(bsd_management));
+                        }
+                        string bsd_company = retriveLookup("bsd_manufactory", "bsd_codeax", objproduct.company, org);
+                        if (bsd_company != null)
+                        {
+                            entity["bsd_company"] = new EntityReference("bsd_manufactory", Guid.Parse(bsd_company));
+                        }
+                        string bsd_productsize2 = retriveLookup("bsd_size2", "bsd_codeax", objproduct.productsize2, org);
+                        if (bsd_productsize2 != null)
+                        {
+                            entity["bsd_productsize2"] = new EntityReference("bsd_size2", Guid.Parse(bsd_productsize2));
+                        }
+                        string bsd_productsize3 = retriveLookup("bsd_size3", "bsd_codeax", objproduct.productsize3, org);
+                        if (bsd_productsize3 != null)
+                        {
+                            entity["bsd_productsize3"] = new EntityReference("bsd_size3", Guid.Parse(bsd_productsize3));
+                        }
+                        string bsd_subcategory1 = retriveLookup("bsd_subcategory1", "bsd_codeax", objproduct.subcategory1, org);
+                        if (bsd_subcategory1 != null)
+                        {
+                            entity["bsd_subcategory1"] = new EntityReference("bsd_subcategory1", Guid.Parse(bsd_subcategory1));
+                        }
+                        string bsd_companybrand = retriveLookup("bsd_companybrand", "bsd_codeax", objproduct.companybrand, org);
+                        if (bsd_companybrand != null)
+                        {
+                            entity["bsd_companybrand"] = new EntityReference("bsd_companybrand", Guid.Parse(bsd_companybrand));
+                        }
+                        if (objproduct.subbrandname != null)
+                        {
+                            string bsd_subbrandname = retriveLookup("bsd_subbrandname", "bsd_codeax", objproduct.subbrandname, org);
+                            if (bsd_subbrandname != null)
+                            {
+                                entity["bsd_subbrandname"] = new EntityReference("bsd_subbrandname", Guid.Parse(bsd_subbrandname));
+                            }
+                        }
+                        if (objproduct.grand != "" && objproduct.grand != null)
+                        {
+                            int grand = 0;
+                            if (objproduct.grand == "0") //viên
+                            {
+                                grand = 861450000;
+                            }
+                            else if (objproduct.grand == "1") //cục
+                            {
+                                grand = 861450001;
+                            }
+                            else if (objproduct.grand == "2") //hạt
+                            {
+                                grand = 861450002;
+                            }
+                            else if (objproduct.grand == "3") //bột
+                            {
+                                grand = 861450003;
+                            }
+                            else if (objproduct.grand == "4") //nước
+                            {
+                                grand = 861450004;
+                            }
+                            if (grand != 0) entity["bsd_grand"] = new OptionSetValue(grand);
+                        }
+                        #endregion
+                        crm.Service.Update(entity);
+                        #endregion
+                        return "success";
+                    }
+                    else
+                    {
+                        #region Insert
+                        Entity entity = new Entity("product");
+                        entity["productnumber"] = objproduct.productnumber;
+                        entity["name"] = objproduct.name;
+                        entity["description"] = objproduct.description;
+                        string bsd_itemsalestaxgroupid = retriveLookup("bsd_itemsalestaxgroup", "bsd_name", objproduct.bsd_itemsalestaxgroup, org);
+                        if (bsd_itemsalestaxgroupid != null)
+                        {
+                            entity["bsd_itemsalestaxgroup"] = new EntityReference("bsd_itemsalestaxgroup", Guid.Parse(bsd_itemsalestaxgroupid));
+                        }
+                        string uomscheduleid = null;
+                        if (objproduct.defaultuomscheduleid != null)
+                        {
+                            uomscheduleid = retriveLookup("uomschedule", "name", objproduct.defaultuomscheduleid, org);
+                            if (uomscheduleid != null)
+                            {
+                                entity["defaultuomscheduleid"] = new EntityReference("uomschedule", Guid.Parse(uomscheduleid));
+                            }
+                        }
+                        #region uom
+                        if (objproduct.defaultuomid != null)
+                        {
+                            xml = @"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
+                                                     <entity name='uom'>
+                                                    <attribute name='uomid'/>
+                                                    <attribute name='quantity'/>
+                                                    <filter type='and'>
+                                                         <condition attribute='uomscheduleid' operator='eq' uitype='uomschedule' value='" + uomscheduleid + @"' />
+                                                            <condition attribute = 'name' operator= 'eq' uitype = 'uom' value = '" + objproduct.defaultuomid + @"' />
+                                                    </filter>
+                                                   </entity>
+                                                  </fetch>";
+                            var lst_uom = crm.Service.RetrieveMultiple(new FetchExpression(xml));
+                            if (lst_uom.Entities.Any())
+                            {
+                                // var bankdefault = (EntityReference)configdefault[0]["bsd_bankdefault"];
+                                Entity uom = lst_uom.Entities.First();
+                                entity["defaultuomid"] = new EntityReference(uom.LogicalName, uom.Id); ;
+                            }
+                        }
+                        //else
+                        //{
+                        //    return "Unit not found";
+                        //}
+                        //string uomid = retriveLookup("uom", "name", objproduct.defaultuomid, org);
+                        //if (uomid != null)
+                        //{
+                        //    entity["defaultuomid"] = new EntityReference("uom", Guid.Parse(uomid));
+                        //}
+
+                        #endregion
+                        #region Customize
+                        xml = "1";
+                        string bsd_weight = retriveLookup("bsd_weightproduct", "bsd_code", objproduct.bsd_weight.Trim(), org);
+                        if (bsd_weight != null)
+                        {
+                            entity["bsd_weight"] = new EntityReference("bsd_weightproduct", Guid.Parse(bsd_weight));
+                        }
+                        xml = "2";
+                        string bsd_manufactory = retriveLookup("bsd_manufactory", "bsd_code", objproduct.bsd_manufactory, org);
+                        if (bsd_manufactory != null)
+                        {
+                            entity["bsd_manufactory"] = new EntityReference("bsd_manufactory", Guid.Parse(bsd_manufactory));
+                        }
+                        xml = "3";
+                        string bsd_size = retriveLookup("bsd_size", "bsd_code", objproduct.bsd_size, org);
+                        if (bsd_size != null)
+                        {
+                            entity["bsd_size"] = new EntityReference("bsd_size", Guid.Parse(bsd_size));
+                        }
+                        xml = "4";
+                        string bsd_style = retriveLookup("bsd_style", "bsd_code", objproduct.bsd_style, org);
+                        if (bsd_style != null)
+                        {
+                            entity["bsd_style"] = new EntityReference("bsd_style", Guid.Parse(bsd_style));
+                        }
+                        xml = "5";
+                        string bsd_brand = retriveLookup("bsd_brand", "bsd_code", objproduct.bsd_brand, org);
+                        if (bsd_brand != null)
+                        {
+                            entity["bsd_brand"] = new EntityReference("bsd_brand", Guid.Parse(bsd_brand));
+                        }
+                        xml = "6";
+                        string bsd_packing = retriveLookup("bsd_packing", "bsd_code", objproduct.bsd_packing, org);
+                        if (bsd_packing != null)
+                        {
+                            entity["bsd_packing"] = new EntityReference("bsd_packing", Guid.Parse(bsd_packing));
+                        }
+                        xml = "7";
+                        string bsd_packaging = retriveLookup("bsd_packaging", "bsd_code", objproduct.bsd_packaging, org);
+                        if (bsd_packaging != null)
+                        {
+                            entity["bsd_packaging"] = new EntityReference("bsd_packaging", Guid.Parse(bsd_packaging));
+                        }
+                        xml = "8";
+                        string bsd_configuration = retriveLookup("bsd_configuration", "bsd_code", objproduct.bsd_configuration, org);
+                        if (bsd_configuration != null)
+                        {
+                            entity["bsd_configuration"] = new EntityReference("bsd_configuration", Guid.Parse(bsd_configuration));
+                        }
+                        xml = "9";
+                        string bsd_divisionname = retriveLookup("bsd_division", "bsd_codeax", objproduct.divisionname, org);
+                        if (bsd_divisionname != null)
+                        {
+                            entity["bsd_divisionname"] = new EntityReference("bsd_division", Guid.Parse(bsd_divisionname));
+                        }
+                        xml = "10";
+                        string bsd_management = retriveLookup("bsd_management", "bsd_codeax", objproduct.management, org);
+                        if (bsd_management != null)
+                        {
+                            entity["bsd_management"] = new EntityReference("bsd_management", Guid.Parse(bsd_management));
+                        }
+                        xml = "11";
+                        string bsd_company = retriveLookup("bsd_manufactory", "bsd_codeax", objproduct.company, org);
+                        if (bsd_company != null)
+                        {
+                            entity["bsd_company"] = new EntityReference("bsd_manufactory", Guid.Parse(bsd_company));
+                        }
+                        xml = "12";
+                        string bsd_productsize2 = retriveLookup("bsd_size2", "bsd_codeax", objproduct.productsize2, org);
+                        if (bsd_productsize2 != null)
+                        {
+                            entity["bsd_productsize2"] = new EntityReference("bsd_size2", Guid.Parse(bsd_productsize2));
+                        }
+                        xml = "13";
+                        string bsd_productsize3 = retriveLookup("bsd_size3", "bsd_codeax", objproduct.productsize3, org);
+                        if (bsd_productsize3 != null)
+                        {
+                            entity["bsd_productsize3"] = new EntityReference("bsd_size3", Guid.Parse(bsd_productsize3));
+                        }
+                        xml = "14";
+                        string bsd_subcategory1 = retriveLookup("bsd_subcategory1", "bsd_codeax", objproduct.subcategory1, org);
+                        if (bsd_subcategory1 != null)
+                        {
+                            entity["bsd_subcategory1"] = new EntityReference("bsd_subcategory1", Guid.Parse(bsd_subcategory1));
+                        }
+                        xml = "15";
+                        string bsd_companybrand = retriveLookup("bsd_companybrand", "bsd_codeax", objproduct.companybrand, org);
+                        if (bsd_companybrand != null)
+                        {
+                            entity["bsd_companybrand"] = new EntityReference("bsd_companybrand", Guid.Parse(bsd_companybrand));
+                        }
+                        xml = "16";
+                        if (objproduct.subbrandname != null)
+                        {
+                            string bsd_subbrandname = retriveLookup("bsd_subbrandname", "bsd_codeax", objproduct.subbrandname, org);
+                            if (bsd_subbrandname != null)
+                            {
+                                entity["bsd_subbrandname"] = new EntityReference("bsd_subbrandname", Guid.Parse(bsd_subbrandname));
+                            }
+                        }
+                        xml = "17";
+                        if (objproduct.grand != "" && objproduct.grand != null)
+                        {
+                            int grand = 0;
+                            if (objproduct.grand == "0") //viên
+                            {
+                                grand = 861450000;
+                            }
+                            else if (objproduct.grand == "1") //cục
+                            {
+                                grand = 861450001;
+                            }
+                            else if (objproduct.grand == "2") //hạt
+                            {
+                                grand = 861450002;
+                            }
+                            else if (objproduct.grand == "3") //bột
+                            {
+                                grand = 861450003;
+                            }
+                            else if (objproduct.grand == "4") //nước
+                            {
+                                grand = 861450004;
+                            }
+                            if (grand != 0) entity["bsd_grand"] = new OptionSetValue(grand);
+
+                        }
+                        xml = "18";
+                        #endregion
+                        Guid idproduct = crm.Service.Create(entity);
+                        Entity newproduct_update = new Entity("product", idproduct);
+                        SetStateRequest setStateRequest = new SetStateRequest()
+                        {
+                            EntityMoniker = new EntityReference
+                            {
+                                Id = newproduct_update.Id,
+                                LogicalName = newproduct_update.LogicalName
+                            },
+                            State = new OptionSetValue(0),
+                            Status = new OptionSetValue(1)
+                        };
+                        crm.Service.Execute(setStateRequest);
+                        crm.Service.Update(newproduct_update);
+                        xml = "19";
+                        #endregion
+                        return "success";
+                    }
+                }
+                else return "Object Product Is Null";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message + " trace:" + xml;
+                throw;
+            }
+        }
+        /*
         internal static string insertProduct(Product objproduct, string org)
         {
             var xml = "";
@@ -1498,6 +2495,7 @@ namespace DMSService
                 throw;
             }
         }
+        */
         internal static bool DeleteProduct(string ItemId, string org)
         {
             try
@@ -1523,6 +2521,7 @@ namespace DMSService
             }
         }
         //vinhlh insert Account 1-6-2018
+        #endregion
         internal static string insertAccount(Account objAccount, string org)
         {
             string trace = "0";
@@ -3468,7 +4467,7 @@ namespace DMSService
                     crm.Service.Create(entity);
                     result.status = "success";
                     //get PO
-                
+
                     List<TransferOrderProduct> lstProduct = new List<TransferOrderProduct>();
                     int i = 0;
                     result.RecId = i.ToString();
@@ -3501,8 +4500,8 @@ namespace DMSService
                             product.bsd_totalpriceshipping = bsd_totalpriceshipping;
                             lstProduct.Add(product);
                             if (i == 0)
-                                value =item.RecId.Trim()+":"+item.productnumber.Trim() + ":" + bsd_totalpriceshipping;
-                            else value +=";"+item.RecId.Trim() + ":" +item.productnumber.Trim() + ":" + bsd_totalpriceshipping;
+                                value = item.RecId.Trim() + ":" + item.productnumber.Trim() + ":" + bsd_totalpriceshipping;
+                            else value += ";" + item.RecId.Trim() + ":" + item.productnumber.Trim() + ":" + bsd_totalpriceshipping;
                             i++;
 
                             //result.TransferOrderProduct.Add(product);

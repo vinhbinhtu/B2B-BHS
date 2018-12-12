@@ -169,6 +169,36 @@ namespace Plugin_SystemLog
             }
             return null;
         }
+        public static string getInvoiceSuborder(IOrganizationService service, string SuborderId, string CodeAx)
+        {
+            string xml = @"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
+                              <entity name='bsd_invoiceax'>
+                                <attribute name='bsd_invoiceaxid' />
+                                <attribute name='bsd_name' />
+                                <attribute name='createdon' />
+                                <attribute name='bsd_serial' />
+                                <attribute name='bsd_codeax' />
+                                <attribute name='bsd_suborder' />
+                                <order attribute='createdon' descending='true' />
+                                <filter type='and'>
+                                  <condition attribute='bsd_codeax' operator='eq' value='" + CodeAx.Trim() + @"' />
+                                </filter>
+                                <link-entity name='bsd_suborder' from='bsd_suborderid' to='bsd_suborder' alias='ab'>
+                                  <filter type='and'>
+                                    <condition attribute='bsd_suborderax' operator='eq' value='" + SuborderId.Trim() + @"' />
+                                  </filter>
+                                </link-entity>
+                              </entity>
+                            </fetch>";
+
+            EntityCollection list = service.RetrieveMultiple(new FetchExpression(xml));
+            if (list.Entities.Count() > 0)
+            {
+                return list.Entities.First().Id.ToString();
+            }
+            return null;
+
+        }
         public static EntityCollection getRouteTypePurChaseOrder(IOrganizationService service, Guid toSiteId, string vendorId)
         {
             string xml = @"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
@@ -182,7 +212,36 @@ namespace Plugin_SystemLog
                     </filter>
                   </entity>
                 </fetch>";
-            
+
+            EntityCollection list = service.RetrieveMultiple(new FetchExpression(xml));
+            return list;
+
+        }
+        public static EntityCollection getReturnOrderBySalesOrder(IOrganizationService service, Guid SalesOrdeId)
+        {
+            string xml = @"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='true'>
+                                  <entity name='bsd_suborder'>
+                                    <attribute name='bsd_name' />
+                                    <attribute name='createdon' />
+                                    <attribute name='bsd_totalamount' />
+                                    <attribute name='bsd_date' />
+                                    <attribute name='statecode' />
+                                    <attribute name='ownerid' />
+                                    <attribute name='bsd_suborderid' />
+                                    <attribute name='bsd_detailamount' />
+                                    <attribute name='bsd_totaltax' />
+                                    <order attribute='bsd_name' descending='false' />
+                                     <filter type='and'>
+                                      <condition attribute='statuscode' operator='eq' value='861450002' />
+                                    </filter>
+                                    <link-entity name='bsd_returnorder' from='bsd_returnorderid' to='bsd_returnorder' alias='ad'>
+                                      <filter type='and'>
+                                        <condition attribute='bsd_findsuborder' operator='eq'  uitype='bsd_suborder' value='"+ SalesOrdeId + @"' />
+                                      </filter>
+                                    </link-entity>
+                                  </entity>
+                                </fetch>";
+
             EntityCollection list = service.RetrieveMultiple(new FetchExpression(xml));
             return list;
 

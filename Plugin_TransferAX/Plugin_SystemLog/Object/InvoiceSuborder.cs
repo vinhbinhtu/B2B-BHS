@@ -73,11 +73,15 @@ namespace Plugin_SystemLog.Object
             try
             {
                 bool flat = true;
+                //throw new Exception("okie");
                 Guid idInvoice = Guid.Empty;
                 string entityName = "bsd_invoiceax";
                 service = myService;
+               
                 if (string.IsNullOrEmpty(obj.Serial) || string.IsNullOrEmpty(obj.Invoice)) throw new Exception("Serial or Invoice No. is not null");
-                string invoiceSubOrderId = Util.retrivestringvaluelookup("bsd_invoiceax", "bsd_codeax", obj.Serial.Trim() + "-" + obj.Invoice.Trim(), service);
+                //string invoiceSubOrderId = Util.retrivestringvaluelookup("bsd_invoiceax", "bsd_codeax", obj.Serial.Trim() + "-" + obj.Invoice.Trim() +"-"+obj.SuborderID.Trim(), service);
+                string invoiceSubOrderId = Util.getInvoiceSuborder(service, obj.SuborderID.Trim(), obj.Serial.Trim() + "-" + obj.Invoice.Trim());
+                
                 if (invoiceSubOrderId != null)
                 {
                     idInvoice = Guid.Parse(invoiceSubOrderId);
@@ -87,20 +91,104 @@ namespace Plugin_SystemLog.Object
                     if (suborder.HasValue("bsd_suborderax"))
                     {
                         //Trường hợp đơn hàng xuất khẩu cập nhật invoice suborder
-                        if (suborder["bsd_suborderax"].ToString().Trim() == obj.SuborderID.Trim())
-                        {
-                            // if (!invoiceSubOrder.HasValue("bsd_packingslip"))
-                            //   {
-                            // Đơn hàng Xuất khẩu  //Trường hợp đơn hàng xuất khẩu cập nhật invoice suborder
-                            flat = false;
-                            //  }
-                            // else throw new Exception("Invoice suborder existed in CRM");
-
-                        }
-                        // else // Đơn hàng 1 invoice cho nhiều suborder flat=true;
+                        flat = false;
                     }
+                }
+                else // Nhiều Return Order cho 1 Invoice
+                {
+                   
+                    #region Nhiều Return Order cho 1 Invoice
+                    string SuborderID = Util.retriveLookup("bsd_suborder", "bsd_suborderax", obj.SuborderID.Trim(), service);
+                  
+                    if (SuborderID != null)
+                    {
+                        Entity suborder = service.Retrieve("bsd_suborder", Guid.Parse(SuborderID), new ColumnSet("bsd_date", "bsd_type", "bsd_returnorder"));
+                        if (suborder.HasValue("bsd_type"))
+                        {
+                            //throw new Exception("jdj:"+((OptionSetValue) suborder["bsd_type"]).Value);
+                            if (((OptionSetValue)suborder["bsd_type"]).Value ==861450004)//type Return Order
+                            {
+                                //throw new Exception("dd");
+                                //invoiceSubOrderId = Util.retrivestringvaluelookup("bsd_invoiceax", "bsd_codeax", obj.Serial.Trim() + "-" + obj.Invoice.Trim(), service);
+                                //if (invoiceSubOrderId != null)
+                                //{
+                                //Tìm suborder đơn hàng bán với hóa đơn bán
+                                // idInvoice = Guid.Parse(invoiceSubOrderId);
+                                EntityReference returnorder_Rf = (EntityReference)suborder["bsd_returnorder"];
+                                Entity returnorder = service.Retrieve(returnorder_Rf.LogicalName, returnorder_Rf.Id, new ColumnSet("bsd_findsuborder"));
+                                EntityReference suborder_rf = (EntityReference)returnorder["bsd_findsuborder"];
+                                #region lấy danh sách đơn hàng trả thuộc đơn hàng bán
+                                EntityCollection lstReturnOrder = Util.getReturnOrderBySalesOrder(service, suborder_rf.Id);
+                               // throw new Exception("Count:" + suborder_rf.Id +"----"+ lstReturnOrder.Entities.Count);
+                                if (lstReturnOrder.Entities.Count > 1)
+                                {
+                                    foreach (var item in lstReturnOrder.Entities)
+                                    {
+                                        #region Insert invoice Suborder
+                                        Entity entity = new Entity(entityName);
+                                        entity["bsd_codeax"] = obj.Serial.Trim() + "-" + obj.Invoice.Trim();
+                                        // entity["bsd_date"] = obj.Date;
+                                        entity["bsd_invoicedate"] = obj.InvoiceDate;
+                                        if (obj.CustomerCode != null)
+                                            entity["bsd_accountid"] = obj.CustomerCode;
+                                        if (obj.Serial != null)
+                                            entity["bsd_serial"] = obj.Serial;
+                                        if (obj.Invoice != null)
+                                            entity["bsd_name"] = obj.Invoice;
+                                        if (obj.Description != null)
+                                            entity["bsd_description"] = obj.Description;
+                                        if (obj.TotalAmount.ToString() != null)
+                                            entity["bsd_totalamount"] = new Money(obj.TotalAmount);
+                                        if (obj.TotalTax.ToString() != null)
+                                            entity["bsd_totaltax"] = new Money(obj.TotalTax);
+                                        entity["bsd_exchangerate"] = 1m;
+                                        if (obj.ExchangeRate.ToString() != null)
+                                            entity["bsd_exchangerate"] = obj.ExchangeRate;
+                                        if (obj.ExtendedAmount.ToString() != null)
+                                            entity["bsd_extendedamount"] = new Money(obj.ExtendedAmount);
+                                        entity["bsd_paymentdate"] = obj.PaymentDate;
+
+                                        #region gán gia trị từ suborder sang invoice
+                                        if (item.HasValue("bsd_detailamount"))
+                                            entity["bsd_extendedamount"] = (Money)item["bsd_detailamount"];
+                                        if (item.HasValue("bsd_totaltax"))
+                                            entity["bsd_totaltax"] = (Money)item["bsd_totaltax"];
+                                        if (item.HasValue("bsd_totalamount"))
+                                            entity["bsd_totalamount"] = (Money)item["bsd_totalamount"];
+                                        entity["bsd_suborder"] = new EntityReference("bsd_suborder", item.Id);
+                                        if (item.HasValue("bsd_date"))
+                                            entity["bsd_date"] = item["bsd_date"];
+                                        #endregion
+                                        #region entity lookup
+                                        string CustomerCode = Util.retriveLookup("account", "accountnumber", obj.CustomerCode, service);
+                                        if (CustomerCode != null)
+                                        {
+                                            entity["bsd_account"] = new EntityReference("account", Guid.Parse(CustomerCode));
+                                        }
+                                        string Currency = Util.retriveLookup("transactioncurrency", "isocurrencycode", obj.Currency, service);
+                                        if (Currency != null)
+                                        {
+                                            entity["transactioncurrencyid"] = new EntityReference("transactioncurrency", Guid.Parse(Currency));
+                                        }
+                                        else
+                                            throw new Exception("Iso currencycode " + obj.Currency + " not found CRM");
+
+                                        #endregion
+                                        idInvoice = service.Create(entity);
 
 
+                                        #endregion
+                                    }
+                                    flat = false;
+                                }
+                                #endregion
+                                //suborder = service.Retrieve(suborder_rf.LogicalName, suborder_rf.Id, new ColumnSet("bsd_suborderax"));
+                                //}
+                            }
+                        }
+                    }
+                    else throw new Exception("Suborder " + obj.SuborderID + " not found in CRM");
+                    #endregion
                 }
                 if (flat == true)
                 {

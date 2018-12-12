@@ -329,6 +329,87 @@ namespace DMSService
         {
             return CrmProvider.DeleteSaleTaxCode(Recid, org);
         }
+        #region Product vinhlh 17-9-2018
+        public string insertProductSize2(objProductSize2 obj, string org)
+        {
+            return CrmProvider.insertProductSize2(obj, org);
+        }
+
+        public bool DeleteProductSize2(string Recid, string org)
+        {
+            return CrmProvider.DeleteProductSize2(Recid, org);
+        }
+
+        public string insertProductSize3(objProductSize3 obj, string org)
+        {
+            return CrmProvider.insertProductSize3(obj, org);
+        }
+
+        public bool DeleteProductSize3(string Recid, string org)
+        {
+            return CrmProvider.DeleteProductSize3(Recid, org);
+        }
+
+        public string insertSubcategory1(objSubcategory1 obj, string org)
+        {
+            return CrmProvider.insertSubcategory1(obj, org);
+        }
+
+        public bool DeleteSubcategory1(string Recid, string org)
+        {
+            return CrmProvider.DeleteSubcategory1(Recid, org);
+        }
+
+        public string insertCompany(objCompany obj, string org)
+        {
+            return CrmProvider.insertCompany(obj, org);
+        }
+
+        public bool DeleteCompany(string Recid, string org)
+        {
+            return CrmProvider.DeleteCompany(Recid, org);
+        }
+
+        public string insertDivision(objDivision obj, string org)
+        {
+            return CrmProvider.insertDivision(obj, org);
+        }
+
+        public bool DeleteDivision(string Recid, string org)
+        {
+            return CrmProvider.DeleteDivision(Recid, org);
+        }
+
+        public string insertManagement(objManagement obj, string org)
+        {
+            return CrmProvider.insertManagement(obj, org);
+        }
+
+        public bool DeleteManagement(string Recid, string org)
+        {
+            return CrmProvider.DeleteManagement(Recid, org);
+        }
+
+        public string insertCompanyBrand(objCompanyBrand obj, string org)
+        {
+            return CrmProvider.insertCompanyBrand(obj, org);
+        }
+
+        public bool DeleteCompanyBrand(string Recid, string org)
+        {
+            return CrmProvider.DeleteCompanyBrand(Recid, org);
+        }
+
+        public string insertSubBrandName(objSubBrandName obj, string org)
+        {
+            return CrmProvider.insertSubBrandName(obj, org);
+        }
+
+        public bool DeleteSubBrandName(string Recid, string org)
+        {
+            return CrmProvider.DeleteSubBrandName(Recid, org);
+        }
+        #endregion
         public bool DeleteProduct(string Recid, string org)
         {
             return CrmProvider.DeleteProduct(Recid, org);

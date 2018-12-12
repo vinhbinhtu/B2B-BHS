@@ -74,7 +74,7 @@ namespace Plugin_TransferAX
                         string bsd_shiptoaccountname = "";//lookup
                         string bsd_paymentmethod = "";
                         string bsd_shiptoaddress = "";//lookup
-                        string bsd_status = "";//
+                       // string bsd_status = "";//
                         Random rnd = new Random();
                         string bsd_customerpo = "CRMAX";
                         string bsd_site = "BHS";
@@ -631,8 +631,8 @@ namespace Plugin_TransferAX
                                     string bsd_unit = "";
                                     decimal bsd_giatruocthue = 0m;
                                     decimal bsd_amount = 0m;
-                                    decimal bsd_discount = 0m;
-                                    decimal bsd_discountpercent = 0m;
+                                    //decimal bsd_discount = 0m;
+                                    //decimal bsd_discountpercent = 0m;
 
                                     Entity b2c_SubOrderProduct = service.Retrieve(SubOrderProduct.LogicalName, SubOrderProduct.Id, new ColumnSet(true));
                                     //if (b2c_SubOrderProduct.HasValue("bsd_product"))

@@ -62,7 +62,7 @@ namespace SubOrder
             date = EnityUtilities.RetrieveLocalTimeFromUTCTime(date, service);
             DateTime datedistributor = date;
             date = date.AddHours(time_closing);
-            throw new Exception("time_closing: " + time_closing +"date: "+date.ToLocalTime() );
+            //throw new Exception("time_closing: " + time_closing +"date: "+date.ToLocalTime() );
             // date = date.AddDays(1)
             //lay calendar holiday
             string datefull = date.ToString("yyyy-MM-dd");
